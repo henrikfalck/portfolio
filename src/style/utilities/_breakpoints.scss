@@ -1,0 +1,28 @@
+// ===
+// BREAKPOINTS
+// ===
+
+@mixin breakpoint($point) {
+  @if $point == xl {
+    @error "Breakpoint #{$point} doesn't exist. Choose between 'larger', 'large', 'medium' or 'small'.";
+    @media (min-width: 2000.1px) {
+      @content;
+    }
+  } @else if $point == larger {
+    @media (max-width: 2000px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: 1140px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 800px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 650px) {
+      @content;
+    }
+  }
+}

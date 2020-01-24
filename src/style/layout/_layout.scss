@@ -1,0 +1,27 @@
+@import "../utilities/units";
+
+// ===
+// LAYOUT
+// ===
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: $unit200;
+
+  .half {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .third {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .quarter {
+    width: 25%;
+    display: inline-block;
+  }
+}
