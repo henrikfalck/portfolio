@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `[TEMPLATE]`,
+    title: `Henrik Falck Mentzoni`,
     description: `Template page for Gatsby`,
     author: `@henrikfalck`,
   },
@@ -30,45 +30,39 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-image`,
     `gatsby-plugin-transition-link`,
-    /*
-    // ==========================================
-    // WORDPRESS SOURCING
-    */
-    // {
-    //   resolve: `gatsby-source-wordpress`,
-    //   options: {
-    //     baseUrl: `wp.henrikfalck.no`,
-    //     protocol: `http`,
-    //     hostingWPCOM: false,
-    //     useACF: true,
-    //     verboseOutput: false,
-    //     perPage: 100,
-    //     searchAndReplaceContentUrls: {
-    //       sourceUrl: `http://wp.henrikfalck.no`,
-    //       replacementUrl: `http://localhost:8000`,
-    //     },
-    //     concurrentRequests: 10,
-    //     includedRoutes: [
-    //       `**/categories`,
-    //       `**/posts`,
-    //       `**/pages`,
-    //       `**/media`,
-    //       `**/tags`,
-    //       `**/taxonomies`,
-    //       `**/users`,
-    //       `**/*/*/menus`, // <== Get menus
-    //       `**/*/*/menu-locations`, // <== Get menu locations
-    //     ],
-    //     excludedRoutes: [],
-    //     normalizer: function({ entities }) {
-    //       return entities
-    //     },
-    //   },
-    // },
-    /*
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `wp.henrikfalck.no`,
+        protocol: `http`,
+        hostingWPCOM: false,
+        useACF: true,
+        verboseOutput: false,
+        perPage: 100,
+        searchAndReplaceContentUrls: {
+          sourceUrl: `http://wp.henrikfalck.no`,
+          replacementUrl: `http://localhost:8000`,
+        },
+        concurrentRequests: 10,
+        includedRoutes: [
+          // `**/categories`,
+          `**/posts`,
+          `**/pages`,
+          `**/media`,
+          `**/tags`,
+          `**/taxonomies`,
+          // `**/users`,
+          // `**/*/*/menus`, // <== Get menus
+          // `**/*/*/menu-locations` // <== Get menu locations
+        ],
+        excludedRoutes: [],
+        normalizer: function({ entities }) {
+          return entities
+        },
+      },
+    },
     // ==========================================
     // FACEBOOK PIXEL
-    */
     // {
     //   resolve: `gatsby-plugin-facebook-pixel`,
     //   options: {
