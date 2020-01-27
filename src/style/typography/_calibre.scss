@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Calibre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("/font-files/calibre-web-regular.eot") format(eot),
+    url("/font-files/calibre-web-regular.woff") format(woff),
+    url("/font-files/calibre-web-regular.woff2") format(woff2),
+    local(Calibre) format(ttf);
+}
+
+@font-face {
+  font-family: "Calibre", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url("/font-files/calibre-web-medium.eot") format(eot),
+    url("/font-files/calibre-web-medium.woff") format(woff),
+    url("/font-files/calibre-web-medium.woff2") format(woff2),
+    local(Calibre) format(ttf);
+}
+
+@font-face {
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/font-files/calibre-web-semibold.eot") format(eot),
+    url("/font-files/calibre-web-semibold.woff") format(woff),
+    url("/font-files/calibre-web-semibold.woff2") format(woff2),
+    local(Calibre) format(ttf);
+}
+
+@font-face {
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("/font-files/calibre-web-bold.eot") format(eot),
+    url("/font-files/calibre-web-bold.woff") format(woff),
+    url("/font-files/calibre-web-bold.woff2") format(woff2),
+    local(Calibre) format(ttf);
+}
+
+@font-face {
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  src: url("/font-files/calibre-web-bold-italic.eot") format(eot),
+    url("/font-files/calibre-web-bold-italic.woff") format(woff),
+    url("/font-files/calibre-web-bold-italic.woff2") format(woff2),
+    local(Calibre) format(ttf);
+}
