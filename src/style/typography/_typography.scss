@@ -2,99 +2,98 @@
 // TYPOGRAPHY
 // ===
 
-// FONT FACES
-
-// @font-face {
-//   font-family: [], sans-serif;
-//   font-weight: (normal, bold, bolder);
-//   font-style: (normal, oblique);
-//   src: url(./fonts/.eot) format(eot),
-//   url(./fonts/.woff) format(woff),
-//   url(./fonts/.woff2) format(woff2),
-//   local() format(ttf)
-// }
-
-// VARIABLES
-// - Weights
-$font-weight_hair: 100;
-$font-weight_thin: 200;
-$font-weight_light: 300;
-$font-weight_normal: 400;
-$font-weight_medium: 500;
-$font-weight_semibold: 600;
-$font-weight_bold: 700;
-$font-weight_heavy: 800;
-$font-weight_dank: 900;
-
-// - Font families
-$font_substitute: "Helvetica";
-
-// - Sizes
-$font-size_display: 5.6rem;
-$font-size_title: 4.2rem;
-$font-size_heading-large: 3.2rem;
-$font-size_heading-normal: 2.7rem;
-$font-size_heading-small: 2.2rem;
-$font-size_heading-tiny: 1.7rem;
-$font-size_lead: 1.3rem;
-$font-size_main: 1rem;
-$font-size_small: 0.7rem;
+@import "../utilities/_breakpoints";
 
 // SIZES
 html {
-  font-size: 100%;
+  font-size: 125%;
 }
 
 body {
-  font-size: 1.25em; // 1rem = 20px
+  font-size: 20px; // 1rem = 20px
+  font-family: "Calibre" !important;
 }
 
-h1 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_title;
+// STYLES
 
-  .display {
-    font-weight: $font-weight_normal;
-    font-size: $font-size_display;
+h1 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include breakpoint(small) {
+    font-size: 2.7rem;
+  }
+
+  &.display {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4.8rem;
+
+    @include breakpoint(small) {
+      font-size: 3rem;
+    }
   }
 }
 
 h2 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_heading-large;
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include breakpoint(small) {
+    font-size: 2rem;
+  }
 }
 
 h3 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_heading-normal;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include breakpoint(small) {
+    font-size: 1.6rem;
+  }
 }
 
 h4 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_heading-small;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  @include breakpoint(small) {
+    font-size: 1.4rem;
+  }
 }
 
 h5 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_heading-tiny;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  @include breakpoint(small) {
+    font-size: 1.2rem;
+  }
 }
 
 h6 {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_heading-tiny;
+  font-weight: 500;
+  font-size: 1.15rem;
   text-transform: uppercase;
+
+  @include breakpoint(small) {
+    font-size: 1rem;
+  }
 }
 
 p,
-a,
-span {
-  font-family: $font_substitute;
-  font-weight: $font-weight_normal;
-  font-size: $font-size_main;
+a {
+  font-weight: 400;
+  font-size: 1.15rem;
+
+  @include breakpoint(small) {
+    font-size: 1rem;
+  }
 }
