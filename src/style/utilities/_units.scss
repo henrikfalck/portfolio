@@ -25,3 +25,12 @@ $ease-in: cubic-bezier(0.41, 0.03, 1, 1);
 $ease-out: cubic-bezier(0, 0.08, 0.47, 1);
 $ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
 $bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);
+
+* {
+  transition: $fast $ease-in-out all !important;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none !important;
+    animation: none !important;
+  }
+}
