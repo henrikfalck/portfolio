@@ -1,0 +1,83 @@
+@import "src/style/base.scss";
+
+.project-card {
+  width: inherit;
+  height: 640px;
+
+  a {
+    height: fit-content;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+
+    @include breakpoint(large) {
+      flex-direction: column !important;
+    }
+  }
+
+  .project--featured-media {
+    min-height: 640px !important;
+    width: 60%;
+    display: inline-block;
+    order: 1;
+
+    @include breakpoint(large) {
+      height: 480px;
+      width: 100% !important;
+    }
+  }
+
+  .project--information {
+    height: 100% !important;
+    width: calc(40% - 48px);
+    padding-left: 48px;
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    order: 2;
+
+    h6 {
+      margin-bottom: $unit300;
+
+      span {
+        color: $color-pale-yellow;
+      }
+    }
+
+    h1 {
+      max-width: 100%;
+      hyphens: manual;
+      line-break: strict;
+    }
+
+    @include breakpoint(large) {
+      width: 100%;
+      padding: $unit400;
+
+      h1 {
+        max-width: 90%;
+      }
+    }
+  }
+
+  &:nth-of-type(2n) {
+    .project--featured-media {
+      order: 2;
+
+      @include breakpoint(large) {
+        order: unset;
+      }
+    }
+
+    .project--information {
+      padding-left: 0;
+      padding-right: 48px;
+      order: 1;
+    }
+  }
+
+  & + & {
+    margin-top: $unit600;
+  }
+}
