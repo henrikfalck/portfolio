@@ -3,6 +3,47 @@
 // ===
 
 header {
-  height: $unit500;
   width: 100vw;
+  padding: $unit300;
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 999999;
+  mix-blend-mode: difference;
+
+  svg {
+    height: 100px;
+    fill: white;
+  }
+
+  nav {
+    width: auto;
+
+    ul {
+      list-style: none;
+      display: inline-flex;
+      margin-top: 0;
+
+      a {
+        color: white;
+        opacity: 1;
+        text-decoration-color: transparent;
+
+        &:active,
+        &:hover {
+          color: white;
+          text-decoration-color: white;
+        }
+      }
+
+      li + li {
+        margin-left: $unit300;
+      }
+    }
+  }
 }
