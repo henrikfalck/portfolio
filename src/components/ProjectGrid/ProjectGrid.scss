@@ -1,0 +1,17 @@
+@import "src/style/base.scss";
+
+.project-grid {
+  width: 100vw;
+  height: auto;
+  display: block;
+  padding: $unit700;
+  background-color: $color-black !important;
+
+  @include breakpoint(large) {
+    padding: $unit500 !important;
+
+    .Wrapper {
+      margin: 0 !important;
+    }
+  }
+}
