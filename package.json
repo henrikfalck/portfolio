@@ -14,10 +14,11 @@
     "update": "clear && echo \"Checking for updated packages...\" && echo \"\" && sleep 4 && yarn upgrade -L && sleep 2 && clear && echo \"Packages updated.\""
   },
   "dependencies": {
-    "gatsby": "^2.19.4",
+    "gatsby": "^2.19.5",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
     "gatsby-plugin-google-analytics": "^2.1.34",
+    "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.4.0",
@@ -34,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/henrikfalck/portfolio"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
