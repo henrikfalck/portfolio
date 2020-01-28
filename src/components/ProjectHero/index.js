@@ -28,7 +28,6 @@ const ProjectHero = (img, alt, client, clienturl, categories, title) => (
           <h6>Arbeidstype</h6>
           <p>{categories}</p>
         </div>
-        if (condition) {}
       </div>
     </div>
   </section>
