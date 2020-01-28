@@ -13,26 +13,35 @@
     color: $color-black;
 
     span {
+      margin-top: 0;
+      display: inline-block;
       animation-name: fadeIn;
-      animation-timing-function: $ease-in;
-      animation-duration: 0.4s;
+      animation-timing-function: $bounce-out;
       animation-fill-mode: backwards;
-      animation-delay: 0.2s;
       animation-iteration-count: 1;
+      animation-duration: 0.5s;
 
       transform: translateX(0px);
 
       // Delays
       &:nth-of-type(1) {
-        animation-delay: 0.2s;
+        animation-delay: 0.15s * 1;
       }
 
       &:nth-of-type(2) {
-        animation-delay: 0.4s;
+        animation-delay: 0.15s * 2;
       }
 
       &:nth-of-type(3) {
-        animation-delay: 0.6s;
+        animation-delay: 0.15s * 3;
+      }
+
+      &:nth-of-type(4) {
+        animation-delay: 0.15s * 4;
+      }
+
+      &:nth-of-type(5) {
+        animation-delay: 0.15s * 5;
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -68,10 +77,10 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-20px) !important;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
