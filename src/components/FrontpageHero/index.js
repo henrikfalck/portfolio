@@ -4,19 +4,23 @@ import "./FrontpageHero.scss"
 const FrontpageHero = () => (
   <section className="hero">
     <Wrapper width={1440}>
-      <h1 className="display desktop">
+      <h1 className="display desktop no-motion">
         <span>Faglært mediegrafiker</span>
         <br />
         <span>med fokus på UI og</span>
         <br />
         <span>front end-utvikling.</span>
       </h1>
-      <h1 className="display tablet">
-        <span>Faglært mediegrafiker</span>
+      <h1 className="display tablet no-motion">
+        <span>Faglært</span>
+        <br />
+        <span>mediegrafiker</span>
         <br />
         <span>med fokus på UI</span>
         <br />
-        <span>og front end-utvikling.</span>
+        <span>og front end-</span>
+        <br />
+        <span>utvikling.</span>
       </h1>
     </Wrapper>
   </section>
