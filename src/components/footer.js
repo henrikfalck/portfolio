@@ -53,7 +53,7 @@ const Footer = () => (
           </a>
         </div>
         <div className="copyright">
-          <p>© {new Date().getFullYear()}</p>
+          <p>© {new Date().getFullYear()}. Ikke stjel, er du snill.</p>
         </div>
       </div>
     </Wrapper>
