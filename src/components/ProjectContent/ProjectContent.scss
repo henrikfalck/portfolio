@@ -1,18 +1,32 @@
 @import "src/style/base.scss";
 
-.project-text {
+.project-content {
   width: 100vw;
-  height: 100vh;
   padding: 160px 0;
   background: $color-black;
   color: white;
   text-align: center;
 
   @include breakpoint(small) {
-    padding-top: 0;
+    padding: $unit600;
   }
 
   p + p {
     margin-top: $unit300;
+  }
+}
+
+.project-media {
+  width: 100vw;
+  height: fit-content;
+
+  figure {
+    width: 60%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
