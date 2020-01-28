@@ -22,9 +22,12 @@ export const ProjectMedia = ({ content }) => (
 const ProjectContent = ({ children, text }) => (
   <section className="project-content">
     <Wrapper width={768} center>
-      <div dangerouslySetInnerHTML={{ __html: text }}></div>
+      <div
+        className="project-content--text"
+        dangerouslySetInnerHTML={{ __html: text }}
+      ></div>
     </Wrapper>
-    <div className="project-images">{children}</div>
+    <div className="project-content--images">{children}</div>
   </section>
 )
 
