@@ -1,15 +1,55 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { IconExternalLink } from "../components/icons"
-import { ProjectText } from "../components/ProjectContent/index"
+import ProjectContent from "../components/ProjectContent/index"
 
 // Styles
 import "../components/ProjectHero/ProjectHero.scss"
 
-const ProjectTemplate = ({ data }) => {
+const ProjectTemplate = () => {
+  const data = useStaticQuery(graphql`
+    query($id: Int) {
+      wordpressPost(wordpress_id: { eq: $id }) {
+        title
+        content
+        acf {
+          categories
+          client
+          client_website
+          project_url
+          project_title
+          project_images {
+            slug
+            localFile {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+                id
+              }
+            }
+          }
+        }
+        featured_media {
+          localFile {
+            childImageSharp {
+              fluid(
+                webpQuality: 100
+                toFormat: WEBP
+                fit: COVER
+                maxWidth: 2560
+              ) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <SEO
@@ -53,49 +93,13 @@ const ProjectTemplate = ({ data }) => {
           </div>
         </div>
       </section>
-      <ProjectText content={data.wordpressPost.content} />
-      <section className="project-media"></section>
+      <ProjectContent text={data.wordpressPost.content}>
+        {data.wordpressPost.acf.project_images.localFile.map(item => (
+          <Img key={item.id} fluid={item.childImageSharp.fluid} />
+        ))}
+      </ProjectContent>
     </Layout>
   )
 }
 
 export default ProjectTemplate
-
-export const PROJECT_QUERY = graphql`
-  query($id: Int!) {
-    wordpressPost(wordpress_id: { eq: $id }) {
-      title
-      acf {
-        categories
-        client
-        client_website
-        project_url
-        project_title
-        project_images {
-          localFile {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-      featured_media {
-        localFile {
-          childImageSharp {
-            fluid(
-              webpQuality: 100
-              toFormat: WEBP
-              fit: COVER
-              maxWidth: 2560
-            ) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      content
-    }
-  }
-`
