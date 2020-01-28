@@ -1,103 +1,126 @@
 @import "src/style/base.scss";
 
 .project-hero {
-  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow-y: hidden;
 
   @include breakpoint(small) {
-    height: auto;
+    height: 70vh;
+    display: block;
   }
 
   .project-hero--img {
-    z-index: 0;
+    height: 100vh;
     position: static !important;
+    z-index: 0;
 
     @include breakpoint(small) {
-      position: relative;
+      height: 70vh;
     }
 
     img,
     picture {
       max-width: 100vw;
       max-height: 100vh;
-      animation: fadeImage 2s;
-      animation-fill-mode: backwards;
-      animation-timing-function: $ease;
+    }
+    @include breakpoint(small) {
+      max-height: 70vh;
+    }
+  }
+}
+
+.project-hero--information-box {
+  position: relative;
+  width: 50vw;
+  min-width: 720px;
+  height: fit-content;
+  padding: $unit600;
+  align-self: flex-end;
+  background: $color-black;
+
+  &.mobile {
+    display: none;
+    padding-bottom: 0;
+  }
+
+  @include breakpoint(small) {
+    &.mobile {
+      display: block;
+    }
+
+    &.desktop {
+      display: none;
     }
   }
 
-  .project-hero--information-box {
-    position: relative;
-    width: 50vw;
-    height: content;
-    padding: $unit600;
-    align-self: flex-end;
-    background: $color-black;
+  * {
+    color: white !important;
+  }
 
-    * {
-      color: white !important;
-    }
+  h1 {
+    word-wrap: break-word !important;
+    display: block;
+  }
+
+  @include breakpoint(small) {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    padding: $unit400;
+  }
+
+  .project-hero--additional-info {
+    margin-top: $unit600;
+    display: inline-flex;
+    flex-direction: row;
 
     @include breakpoint(small) {
-      position: relative;
-      width: 100vw !important;
-      padding: $unit400;
-      top: 50vh;
+      flex-direction: column;
+      margin-top: $unit400;
     }
 
-    .project-hero--additional-info {
-      margin-top: $unit600;
+    h6 {
+      opacity: 0.7;
+      margin-bottom: $unit100;
+    }
+
+    .client,
+    .categories {
+      width: auto;
       display: inline-flex;
-      flex-direction: row;
+      flex-direction: column;
+    }
 
-      @include breakpoint(small) {
-        flex-direction: column;
-        margin-top: $unit400;
-      }
-
-      h6 {
-        opacity: 0.7;
-        margin-bottom: $unit100;
-      }
-
-      .client,
-      .categories {
-        width: auto;
+    .client {
+      a {
         display: inline-flex;
-        flex-direction: column;
-      }
 
-      .client {
-        a {
-          display: inline-flex;
+        .icon {
+          width: 0.8rem;
+          height: 0.8rem;
+          fill: white;
+          display: inline-block;
+          transform: translateX(4px) translateY(2px);
+        }
 
+        &:hover {
           .icon {
-            width: 0.8rem;
-            height: 0.8rem;
-            fill: white;
-            display: inline-block;
-            transform: translateX(4px) translateY(2px);
-          }
-
-          &:hover {
-            .icon {
-              transform: translateX(8px) translateY(2px);
-              transition: $normal $ease all;
-            }
+            transform: translateX(8px) translateY(2px);
+            transition: $normal $ease all;
           }
         }
       }
     }
+  }
 
-    .categories {
-      margin-left: $unit600;
+  .categories {
+    margin-left: $unit600;
 
-      @include breakpoint(small) {
-        margin-left: 0;
-        margin-top: $unit400;
-      }
+    @include breakpoint(small) {
+      margin-left: 0;
+      margin-top: $unit400;
     }
   }
 }
