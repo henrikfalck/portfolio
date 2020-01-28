@@ -21,4 +21,14 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  // Remove all animations and transitions for users
+  // who prefers reduced motion
+  @media (prefers-reduced-motion: reduce) {
+    .no-motion {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
 }
