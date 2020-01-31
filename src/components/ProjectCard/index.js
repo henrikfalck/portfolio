@@ -14,7 +14,7 @@ const ProjectCard = ({ title, client, slug, img, categories }) => (
       <div className="project--information">
         <h6>
           <span>{client}</span>
-          {" — "}
+          <span className="divider">{" — "}</span>
           <span>{categories}</span>
         </h6>
         <h1>{title}</h1>
