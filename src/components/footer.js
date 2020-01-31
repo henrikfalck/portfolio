@@ -15,6 +15,7 @@ const Footer = () => (
     <Wrapper width={1440}>
       <div className="bottom-row">
         <div className="social-links">
+          <h6>Andre steder du finner meg:</h6>
           <a
             href="https://behance.com/henrikfalck"
             className="external-link"
