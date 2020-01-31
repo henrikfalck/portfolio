@@ -26,7 +26,7 @@ h1 {
   line-height: 1;
 
   @include breakpoint(small) {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 
   &.display {
@@ -39,7 +39,7 @@ h1 {
     }
 
     @include breakpoint(small) {
-      font-size: 2.4rem;
+      font-size: 2.7rem;
     }
   }
 }
