@@ -9,7 +9,7 @@ const FrontpageHero = () => (
         <br />
         <span>med fokus på UI og</span>
         <br />
-        <span>front end-utvikling.</span>
+        <span>frontend-utvikling.</span>
       </h1>
       <h1 className="display tablet no-motion">
         <span>Faglært</span>
@@ -18,7 +18,7 @@ const FrontpageHero = () => (
         <br />
         <span>med fokus på UI</span>
         <br />
-        <span>og front end-</span>
+        <span>og frontend-</span>
         <br />
         <span>utvikling.</span>
       </h1>
