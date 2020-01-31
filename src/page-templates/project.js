@@ -109,8 +109,8 @@ export const PROJECTQUERY = graphql`
           slug
           localFile {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+              fluid(toFormat: WEBP, webpQuality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
               }
               id
             }
@@ -126,7 +126,7 @@ export const PROJECTQUERY = graphql`
               fit: COVER
               maxWidth: 2560
             ) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -21,8 +21,8 @@ const ProjectGrid = () => (
               featured_media {
                 localFile {
                   childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
+                    fluid(toFormat: WEBP, webpQuality: 100) {
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }
