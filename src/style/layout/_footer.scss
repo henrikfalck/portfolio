@@ -4,7 +4,7 @@
 
 footer {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: $color-black;
   padding: $unit600 0;
   color: white;
@@ -46,6 +46,7 @@ footer {
 
     h1 {
       color: $color-pale-yellow;
+      margin-bottom: $unit200;
     }
 
     a {
@@ -56,6 +57,14 @@ footer {
         opacity: 0.8;
       }
     }
+
+    @include breakpoint(larger) {
+      padding: 0 $unit600;
+    }
+
+    @include breakpoint(medium) {
+      padding: 0;
+    }
   }
 
   .bottom-row {
@@ -64,7 +73,10 @@ footer {
     vertical-align: bottom;
     text-transform: uppercase;
     justify-content: space-between;
-    font-size: 1em;
+
+    * {
+      font-size: 16px !important;
+    }
 
     h6 {
       color: $color-pale-yellow;
@@ -88,8 +100,26 @@ footer {
       display: inline-flex;
 
       a {
+        text-decoration: none;
+
         & + a {
           margin-left: $unit300;
+        }
+
+        .icon {
+          width: 0.8rem;
+          height: 0.8rem;
+          fill: rgba($color-white, 0.8);
+          display: inline-block;
+          transform: translateX(4px) translateY(2px);
+          transition: $fast $ease all;
+        }
+
+        &:hover {
+          .icon {
+            transform: translateX(8px) translateY(2px);
+            fill: rgba($color-white, 1);
+          }
         }
       }
 
@@ -98,11 +128,11 @@ footer {
         margin-bottom: $unit600;
 
         a {
-          height: $unit400;
+          height: $unit300;
 
           & + a {
             margin-left: 0;
-            margin-top: $unit300;
+            margin-top: $unit200;
           }
         }
       }
@@ -110,7 +140,6 @@ footer {
 
     .copyright {
       p {
-        font-size: 16px;
         opacity: 0.8;
       }
     }
