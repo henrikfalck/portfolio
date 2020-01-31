@@ -7,7 +7,7 @@
   overflow-y: hidden;
 
   @include breakpoint(small) {
-    height: 70vh;
+    height: 100vh;
     display: block;
   }
 
@@ -100,15 +100,16 @@
         .icon {
           width: 0.8rem;
           height: 0.8rem;
-          fill: white;
+          fill: rgba($color-white, 0.8);
           display: inline-block;
           transform: translateX(4px) translateY(2px);
+          transition: $fast $ease all;
         }
 
         &:hover {
           .icon {
             transform: translateX(8px) translateY(2px);
-            transition: $normal $ease all;
+            fill: rgba($color-white, 1);
           }
         }
       }
@@ -127,10 +128,10 @@
 
 @keyframes fadeImage {
   from {
-    max-height: calc(100vh + 64px);
+    transform: translateY(64px);
   }
 
   to {
-    max-height: 100vh;
+    transform: translateY(0);
   }
 }
