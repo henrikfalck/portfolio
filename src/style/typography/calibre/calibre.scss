@@ -4,8 +4,7 @@
   font-style: normal;
   src: url("/calibre-web-regular.eot") format(eot),
     url("/calibre-web-regular.woff") format(woff),
-    url("/calibre-web-regular.woff2") format(woff2),
-    local("Calibre Regular") format(ttf);
+    url("/calibre-web-regular.woff2") format(woff2), local("Calibre Regular");
 }
 
 @font-face {
@@ -14,8 +13,7 @@
   font-style: normal;
   src: url("/calibre-web-medium.eot") format(eot),
     url("/calibre-web-medium.woff") format(woff),
-    url("/calibre-web-medium.woff2") format(woff2),
-    local("Calibre Medium") format(ttf);
+    url("/calibre-web-medium.woff2") format(woff2), local("Calibre Medium");
 }
 
 @font-face {
@@ -24,8 +22,7 @@
   font-style: normal;
   src: url("/calibre-web-semibold.eot") format(eot),
     url("/calibre-web-semibold.woff") format(woff),
-    url("/calibre-web-semibold.woff2") format(woff2),
-    local("Calibre Semibold") format(ttf);
+    url("/calibre-web-semibold.woff2") format(woff2), local("Calibre Semibold");
 }
 
 @font-face {
@@ -34,8 +31,7 @@
   font-style: normal;
   src: url("/calibre-web-bold.eot") format(eot),
     url("/calibre-web-bold.woff") format(woff),
-    url("/calibre-web-bold.woff2") format(woff2),
-    local("Calibre Bold") format(ttf);
+    url("/calibre-web-bold.woff2") format(woff2), local("Calibre Bold");
 }
 
 @font-face {
@@ -45,5 +41,5 @@
   src: url("/calibre-web-bold-italic.eot") format(eot),
     url("/calibre-web-bold-italic.woff") format(woff),
     url("/calibre-web-bold-italic.woff2") format(woff2),
-    local("Calibre Bold Italic") format(ttf);
+    local("Calibre Bold Italic");
 }
