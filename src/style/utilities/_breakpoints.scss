@@ -13,11 +13,11 @@
       @content;
     }
   } @else if $point == large {
-    @media (max-width: 1140px) {
+    @media (max-width: 1024px) {
       @content;
     }
   } @else if $point == medium {
-    @media (max-width: 800px) {
+    @media (max-width: 812px) {
       @content;
     }
   } @else if $point == small {
