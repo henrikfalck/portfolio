@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// import AniLink from "gatsby-plugin-transition-link/AniLink"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 // <ExternalLink to=""></ExternalLink>
 export const ExternalLink = (to, { children }, aria) => (
@@ -22,9 +22,9 @@ export const InternalLink = (to, { children }, aria) => (
   </Link>
 )
 
-/* // <AnimatedLink to=""></AnimatedLink>
+// <AnimatedLink to=""></AnimatedLink>
 export const AnimatedLink = (to, { children }) => (
-  <AniLink to={to} cover direction="left" duration={2} bg="#ffffff">
+  <AniLink to={to} cover direction="left" duration={1} bg="#ffe9cf">
     {children}
   </AniLink>
-) */
+)
