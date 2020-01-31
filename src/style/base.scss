@@ -12,12 +12,10 @@
 @import "./layout/_navigation";
 
 // Utilities
+@import "./utilities/_animations";
 @import "./utilities/_breakpoints";
 @import "./utilities/_mixins";
 @import "./utilities/_units";
-
-// Special pages
-@import "./_projectpage";
 
 // Normalize
 * {
@@ -33,4 +31,8 @@
       animation: none !important;
     }
   }
+}
+
+body {
+  background: $color-black;
 }
