@@ -10,7 +10,7 @@ const ProjectCard = ({ title, client, slug, img, categories }) => (
         fluid={img}
         loading="lazy"
         alt={title}
-        placeholderStyle={{ backgroundColor: #bebebe }}
+        placeholderStyle={{ backgroundColor: "#bebebe" }}
       />
       <div className="project--information">
         <h6>
