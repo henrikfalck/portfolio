@@ -17,7 +17,7 @@ export default class Header extends Component {
               <Link to="/om">Om</Link>
             </li>
             <li className="navigation--link">
-              <Link to="kontakt">Kontakt</Link>
+              <Link to="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </nav>
