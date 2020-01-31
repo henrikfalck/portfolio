@@ -5,7 +5,7 @@
   width: 100vw;
   background-color: $color-pale-yellow;
   display: flex;
-  padding: $unit400;
+  padding: $unit300;
 
   h1 {
     width: inherit;
@@ -16,7 +16,7 @@
       margin-top: 0;
       display: inline-block;
       animation-name: fadeIn;
-      animation-timing-function: $bounce-out;
+      animation-timing-function: cubic-bezier(0.21, 0, 0.02, 1.17);
       animation-fill-mode: backwards;
       animation-iteration-count: 1;
       animation-duration: 0.5s;
@@ -55,7 +55,7 @@
   }
 
   @include breakpoint(small) {
-    padding: $unit300;
+    padding: $unit200;
 
     // Hide heading on mobile
     h1 {
