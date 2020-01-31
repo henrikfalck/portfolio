@@ -32,10 +32,14 @@ h1 {
   &.display {
     font-weight: 700;
     font-style: italic;
-    font-size: 4.8rem;
+    font-size: 5.6rem;
+
+    @include breakpoint(larger) {
+      font-size: 4.8rem;
+    }
 
     @include breakpoint(small) {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
 }
