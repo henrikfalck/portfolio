@@ -15,12 +15,12 @@ footer {
     color: white;
   }
 
-  @include breakpoint(large) {
-    padding: $unit400;
+  @include breakpoint(larger) {
+    padding: $unit400 !important;
   }
 
   @include breakpoint(small) {
-    padding: $unit300;
+    padding: $unit300 !important;
   }
 
   .Wrapper {
@@ -50,6 +50,11 @@ footer {
 
     a {
       font-weight: inherit;
+
+      &:hover {
+        color: white;
+        opacity: 0.8;
+      }
     }
   }
 
@@ -59,10 +64,19 @@ footer {
     vertical-align: bottom;
     text-transform: uppercase;
     justify-content: space-between;
+    font-size: 1em;
 
-    * {
+    h6 {
+      color: $color-pale-yellow;
+      opacity: 1;
+      margin-bottom: $unit300;
+    }
+
+    a {
       color: rgba(#fff, 0.8);
-      font-size: 1rem;
+      &:hover {
+        color: #fff;
+      }
     }
 
     @include breakpoint(small) {
