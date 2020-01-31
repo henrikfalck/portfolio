@@ -3,7 +3,8 @@
 // ===
 
 @import "../utilities/_breakpoints";
-
+@import "./calibre/calibre.scss";
+@import "./inter/inter.scss";
 // SIZES
 html {
   font-size: 125%;
