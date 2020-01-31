@@ -16,36 +16,69 @@
       margin-top: 0;
       display: inline-block;
       animation-name: fadeIn;
+      -webkit-animation-name: fadeIn;
+      -moz-animation-name: fadeIn;
+      -o-animation-name: fadeIn;
       animation-timing-function: cubic-bezier(0.21, 0, 0.02, 1.17);
+      -webkit-animation-timing-function: cubic-bezier(0.21, 0, 0.02, 1.17);
+      -moz-animation-timing-function: cubic-bezier(0.21, 0, 0.02, 1.17);
+      -o-animation-timing-function: cubic-bezier(0.21, 0, 0.02, 1.17);
       animation-fill-mode: backwards;
+      -webkit-animation-fill-mode: backwards;
+      -moz-animation-fill-mode: backwards;
+      -o-animation-fill-mode: backwards;
       animation-iteration-count: 1;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
       animation-duration: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      -moz-animation-duration: 0.5s;
+      -o-animation-duration: 0.5s;
 
       transform: translateX(0px);
 
       // Delays
       &:nth-of-type(1) {
         animation-delay: 0.15s * 1;
+        -webkit-animation-delay: 0.15s * 1;
+        -moz-animation-delay: 0.15s * 1;
+        -o-animation-delay: 0.15s * 1;
       }
 
       &:nth-of-type(2) {
         animation-delay: 0.15s * 2;
+        -webkit-animation-delay: 0.15s * 2;
+        -moz-animation-delay: 0.15s * 2;
+        -o-animation-delay: 0.15s * 2;
       }
 
       &:nth-of-type(3) {
         animation-delay: 0.15s * 3;
+        -webkit-animation-delay: 0.15s * 3;
+        -moz-animation-delay: 0.15s * 3;
+        -o-animation-delay: 0.15s * 3;
       }
 
       &:nth-of-type(4) {
         animation-delay: 0.15s * 4;
+        -webkit-animation-delay: 0.15s * 4;
+        -moz-animation-delay: 0.15s * 4;
+        -o-animation-delay: 0.15s * 4;
       }
 
       &:nth-of-type(5) {
         animation-delay: 0.15s * 5;
+        -webkit-animation-delay: 0.15s * 5;
+        -moz-animation-delay: 0.15s * 5;
+        -o-animation-delay: 0.15s * 5;
       }
 
       @media (prefers-reduced-motion: reduce) {
         animation: none !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
       }
     }
 

@@ -10,12 +10,48 @@
   animation-timing-function: $ease-out;
   background: $color-black !important;
 
+  -webkit-animation-name: ProjectPageFade;
+  -webkit-animation-duration: $normal;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-timing-function: $ease-out;
+
+  -moz-animation-name: ProjectPageFade;
+  -moz-animation-duration: $normal;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-delay: 0.8s;
+  -moz-animation-timing-function: $ease-out;
+
+  -o-animation-name: ProjectPageFade;
+  -o-animation-duration: $normal;
+  -o-animation-fill-mode: backwards;
+  -o-animation-delay: 0.8s;
+  -o-animation-timing-function: $ease-out;
+
   .project-hero--img {
     animation-name: ProjectHeroFade;
     animation-duration: $normal;
     animation-fill-mode: backwards;
     animation-delay: 0.6s;
     animation-timing-function: $ease-out;
+
+    -webkit-animation-name: ProjectHeroFade;
+    -webkit-animation-duration: $normal;
+    -webkit-animation-fill-mode: backwards;
+    -webkit-animation-delay: 0.6s;
+    -webkit-animation-timing-function: $ease-out;
+
+    -moz-animation-name: ProjectHeroFade;
+    -moz-animation-duration: $normal;
+    -moz-animation-fill-mode: backwards;
+    -moz-animation-delay: 0.6s;
+    -moz-animation-timing-function: $ease-out;
+
+    -o-animation-name: ProjectHeroFade;
+    -o-animation-duration: $normal;
+    -o-animation-fill-mode: backwards;
+    -o-animation-delay: 0.6s;
+    -o-animation-timing-function: $ease-out;
   }
 }
 
