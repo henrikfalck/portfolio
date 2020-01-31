@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
@@ -87,7 +87,6 @@ const ProjectTemplate = ({ data }) => {
             fluid={item.localFile.childImageSharp.fluid}
           />
         ))}
-        {console.log(data.wordpressPost.acf.project_images.localFile)}
       </ProjectContent>
     </Layout>
   )
