@@ -1,5 +1,6 @@
 import React from "react"
 import Wrapper from "../components/wrapper"
+import { IconExternalLink } from "../components/icons"
 
 const Footer = () => (
   <footer>
@@ -8,49 +9,48 @@ const Footer = () => (
         <h1 className="display">Vil du ta en prat?</h1>
         <h6>
           Send meg en e-post på{" "}
-          <a href="mailto:heisann@henrikfalck.no">heisann@henrikfalck.no</a>
+          <a href="mailto:hallo@henrikfalck.no">hallo@henrikfalck.no</a>
         </h6>
       </div>
     </Wrapper>
     <Wrapper width={1440}>
       <div className="bottom-row">
         <div className="social-links">
-          <h6>Andre steder du finner meg:</h6>
           <a
             href="https://behance.com/henrikfalck"
             className="external-link"
             rel="noopener noreferrer"
             target="_blank"
-            title="Profilen min på Behance"
+            title="Behance"
           >
-            Behance
+            Behance <IconExternalLink />
           </a>
           <a
             href="https://behance.com/henrikfalck"
             className="external-link"
             rel="noopener noreferrer"
             target="_blank"
-            title="Profilen min på Dribble"
+            title="Dribble"
           >
-            Dribbble
+            Dribbble <IconExternalLink />
           </a>
           <a
             href="https://github.com/henrikfalck"
             className="external-link"
             rel="noopener noreferrer"
             target="_blank"
-            title="Profilen min på Github"
+            title="Github"
           >
-            Github
+            Github <IconExternalLink />
           </a>
           <a
             href="https://instagram.com/henrikfalck_"
             className="external-link"
             rel="noopener noreferrer"
             target="_blank"
-            title="Profilen min på Instagram"
+            title="Instagram"
           >
-            Instagram
+            Instagram <IconExternalLink />
           </a>
         </div>
         <div className="copyright">
