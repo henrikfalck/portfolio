@@ -22,7 +22,7 @@ const ProjectGrid = () => (
                 localFile {
                   childImageSharp {
                     fluid(toFormat: WEBP, webpQuality: 100) {
-                      ...GatsbyImageSharpFluid_withWebp
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
