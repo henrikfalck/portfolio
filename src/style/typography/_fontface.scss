@@ -1,0 +1,116 @@
+// FONTFACES
+
+// Calibre
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/calibre-web-regular.eot") format("embedded-opentype"),
+    url("./fonts/calibre-web-regular.woff") format("woff"),
+    url("./fonts/calibre-web-regular.woff2") format("woff2"),
+    local("Calibre Regular") format("truetype"),
+    local("Calibre-Regular") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/calibre-web-medium.eot") format("embedded-opentype"),
+    url("./fonts/calibre-web-medium.woff") format("woff"),
+    url("./fonts/calibre-web-medium.woff2") format("woff2"),
+    local("Calibre Medium") format("truetype"),
+    local("Calibre-Medium") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./fonts/calibre-web-semibold.eot") format("embedded-opentype"),
+    url("./fonts/calibre-web-semibold.woff") format("woff"),
+    url("./fonts/calibre-web-semibold.woff2") format("woff2"),
+    local("Calibre Semibold") format("truetype"),
+    local("Calibre-Semibold") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/calibre-web-bold.eot") format("embedded-opentype"),
+    url("./fonts/calibre-web-bold.woff") format("woff"),
+    url("./fonts/calibre-web-bold.woff2") format("woff2"),
+    local("Calibre Bold") format("truetype"),
+    local("Calibre-Bold") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./fonts/calibre-web-bold-italic.eot") format("embedded-opentype"),
+    url("./fonts/calibre-web-bold-italic.woff") format("woff"),
+    url("./fonts/calibre-web-bold-italic.woff2") format("woff2"),
+    local("Calibre Bold Italic") format("truetype"),
+    local("Calibre-Bold-Italic") format("truetype"),
+    local("Calibre-BoldItalic") format("truetype");
+}
+
+// Inter
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/Inter-Regular.ttf") format("truetype"),
+    local("Inter") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+  src: url("./fonts/Inter-Medium.woff") format("woff"),
+    url("./fonts/Inter-Medium.woff2") format("woff2"),
+    url("./fonts/Inter-Medium.ttf") format("truetype"),
+    local("Inter Medium") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+  src: url("./fonts/Inter-SemiBold.woff") format("woff"),
+    url("./fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("./fonts/Inter-SemiBold.ttf") format("truetype"),
+    local("Inter Semibold") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("./fonts/Inter-Black.woff") format("woff"),
+    url("./fonts/Inter-Black.woff2") format("woff2"),
+    url("./fonts/Inter-Black.ttf") format("truetype"),
+    local("Inter Black") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: url("./fonts/Inter-BlackItalic.woff") format("woff"),
+    url("./fonts/Inter-BlackItalic.woff2") format("woff2"),
+    url("./fonts/Inter-BlackItalic.ttf") format("truetype"),
+    local("Inter Black Italic") format("truetype");
+}
