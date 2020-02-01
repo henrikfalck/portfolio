@@ -32,9 +32,11 @@
   font-family: "Calibre", "Inter", sans-serif !important;
 
   // Remove all animations and transitions for users
-  // who prefers reduced motion
+  // who prefers reduced motion. ".keep-motion" allows
+  // for essential animations/transitions to be kept,
+  // such as page transitions.
   @media (prefers-reduced-motion: reduce) {
-    .no-motion {
+    &:not(.keep-motion) {
       transition: none !important;
       animation: none !important;
       -webkit-animation: none !important;
