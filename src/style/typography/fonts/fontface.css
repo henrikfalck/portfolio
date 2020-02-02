@@ -10,6 +10,8 @@
   src: url("/src/style/typography/fonts/calibre-web-regular.woff")
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-regular.woff2") format("woff2"),
+    url("/src/style/typography/fonts/calibre-web-regular.eot")
+      format("embedded-opentype"),
     local("Calibre Regular"), local("Calibre-Regular");
 }
 
@@ -20,6 +22,8 @@
   font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-medium.woff") format("woff"),
     url("/src/style/typography/fonts/calibre-web-medium.woff2") format("woff2"),
+    url("/src/style/typography/fonts/calibre-web-medium.eot")
+      format("embedded-opentype"),
     local("Calibre Medium"), local("Calibre-Medium");
 }
 
@@ -32,6 +36,8 @@
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-semibold.woff2")
       format("woff2"),
+    url("/src/style/typography/fonts/calibre-web-semibold.eot")
+      format("embedded-opentype"),
     local("Calibre Semibold"), local("Calibre-Semibold");
 }
 
@@ -42,6 +48,8 @@
   font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-bold.woff") format("woff"),
     url("/src/style/typography/fonts/calibre-web-bold.woff2") format("woff2"),
+    url("/src/style/typography/fonts/calibre-web-bold.eot")
+      format("embedded-opentype"),
     local("Calibre Bold"), local("Calibre-Bold");
 }
 
@@ -54,6 +62,8 @@
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-bold-italic.woff2")
       format("woff2"),
+    url("/src/style/typography/fonts/calibre-web-bold-italic.eot")
+      format("embedded-opentype"),
     local("Calibre Bold Italic"), local("Calibre-Bold-Italic"),
     local("Calibre-BoldItalic");
 }
@@ -67,6 +77,7 @@
   font-display: fallback;
   src: url("/src/style/typography/fonts/Inter-Regular.woff") format("woff"),
     url("/src/style/typography/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/src/style/typography/fonts/Inter-Regular.ttf") format("truetype"),
     local("Inter");
 }
 
@@ -77,6 +88,7 @@
   font-display: fallback;
   src: url("/src/style/typography/fonts/Inter-Medium.woff") format("woff"),
     url("/src/style/typography/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/src/style/typography/fonts/Inter-Medium.ttf") format("truetype"),
     local("Inter Medium");
 }
 
@@ -87,6 +99,7 @@
   font-display: fallback;
   src: url("/src/style/typography/fonts/Inter-SemiBold.woff") format("woff"),
     url("/src/style/typography/fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("/src/style/typography/fonts/Inter-SemiBold.ttf") format("truetype"),
     local("Inter Semibold");
 }
 
@@ -97,6 +110,7 @@
   font-display: fallback;
   src: url("/src/style/typography/fonts/Inter-Black.woff") format("woff"),
     url("/src/style/typography/fonts/Inter-Black.woff2") format("woff2"),
+    url("/src/style/typography/fonts/Inter-Black.ttf") format("truetype"),
     local("Inter Black");
 }
 
@@ -107,5 +121,6 @@
   font-display: fallback;
   src: url("/src/style/typography/fonts/Inter-BlackItalic.woff") format("woff"),
     url("/src/style/typography/fonts/Inter-BlackItalic.woff2") format("woff2"),
+    url("/src/style/typography/fonts/Inter-BlackItalic.ttf") format("truetype"),
     local("Inter Black Italic");
 }
