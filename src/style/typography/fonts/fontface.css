@@ -1,11 +1,12 @@
-// FONTFACES
+/* FONTFACES */
 
-// Calibre
+/* Calibre */
 
 @font-face {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre";
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-regular.woff")
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-regular.woff2") format("woff2"),
@@ -13,18 +14,20 @@
 }
 
 @font-face {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre";
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-medium.woff") format("woff"),
     url("/src/style/typography/fonts/calibre-web-medium.woff2") format("woff2"),
     local("Calibre Medium"), local("Calibre-Medium");
 }
 
 @font-face {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre";
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-semibold.woff")
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-semibold.woff2")
@@ -33,18 +36,20 @@
 }
 
 @font-face {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre";
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-bold.woff") format("woff"),
     url("/src/style/typography/fonts/calibre-web-bold.woff2") format("woff2"),
     local("Calibre Bold"), local("Calibre-Bold");
 }
 
 @font-face {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre";
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
   src: url("/src/style/typography/fonts/calibre-web-bold-italic.woff")
       format("woff"),
     url("/src/style/typography/fonts/calibre-web-bold-italic.woff2")
@@ -53,7 +58,7 @@
     local("Calibre-BoldItalic");
 }
 
-// Inter
+/* Inter */
 
 @font-face {
   font-family: "Inter";
