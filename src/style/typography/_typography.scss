@@ -3,7 +3,6 @@
 // ===
 
 @import "../utilities/_breakpoints";
-//@import "./fonts/_fontface";
 
 // SIZES
 html {
@@ -12,7 +11,7 @@ html {
 
 body {
   font-size: 20px; // 1rem = 20px
-  font-family: "Calibre", "Inter" !important;
+  font-family: "Calibre", "Inter", sans-serif;
 }
 
 // STYLES
