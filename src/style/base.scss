@@ -8,7 +8,6 @@
 @import "./components/_buttons";
 
 // Fonts
-@import "./typography/_fontface";
 @import "./typography/_typography";
 @import "./typography/_links";
 
@@ -29,7 +28,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Calibre", "Inter" !important;
 
   // Remove all animations and transitions for users
   // who prefers reduced motion. ".keep-motion" allows
