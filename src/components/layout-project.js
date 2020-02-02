@@ -4,7 +4,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 import "../style/base.scss"
-import "../style/typography/fonts/_fontface.scss"
+import "../style/typography/fonts/fontface.css"
 import "../style/projectpage.scss"
 
 const Layout = ({ children }) => {
