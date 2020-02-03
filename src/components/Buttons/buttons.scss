@@ -1,24 +1,38 @@
-@import "../_colors";
-@import "../utilities/_units";
+@import "src/style/base.scss";
 
 button {
+  width: fit-content;
   padding: $unit200 $unit300;
-  border-radius: $unit100 / 4;
   font-size: 1rem;
+  font-family: "Calibre";
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @include breakpoint(small) {
+    width: 100%;
+    min-height: 50pt;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+  }
 
   &.button-primary {
     background-color: $color-white;
-    color: $color-black !important;
+    color: rgba($color-black, 1) !important;
   }
 
   &.button-secondary {
     background-color: $color-black;
-    color: $color-white !important;
+    color: rgba($color-white, 1) !important;
   }
 
   &.button-danger {
     background-color: red;
-    color: $color-white !important;
+    color: rgba($color-white, 1) !important;
   }
 
   &.button-small {
