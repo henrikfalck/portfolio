@@ -4,9 +4,6 @@
 // everything will be improved later on.
 // Now bugger off.
 
-// Components
-@import "./components/_buttons";
-
 // Fonts
 @import "./typography/_typography";
 @import "./typography/_links";
@@ -21,7 +18,11 @@
 @import "./utilities/_animations";
 @import "./utilities/_breakpoints";
 @import "./utilities/_mixins";
-@import "./utilities/_units";
+// @import "./utilities/_units";
+
+// Other things
+@import "./_colors";
+@import "./_media";
 
 // Normalize
 * {
@@ -47,3 +48,31 @@
 body {
   background-color: $color-black !important;
 }
+
+// ===
+// UNITS
+// ===
+
+// SIZES
+$unit100: 8px;
+$unit200: $unit100 * 2; // 16px
+$unit300: $unit100 * 3; // 24px
+$unit400: $unit100 * 4; // 32px
+$unit500: $unit100 * 5; // 40px
+$unit600: $unit100 * 8; // 64px
+$unit700: $unit100 * 10; // 80px
+$unit800: $unit100 * 16; // 128px
+$unit900: $unit100 * 20; // 160px
+
+// SPEEDS
+$instant: 0s;
+$fast: 0.3s;
+$normal: 0.6s;
+$slow: 1.2s;
+
+// EASING
+$ease: cubic-bezier(0.29, 0, 0.28, 1);
+$ease-in: cubic-bezier(0.41, 0.03, 1, 1);
+$ease-out: cubic-bezier(0, 0.08, 0.47, 1);
+$ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+$bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);
