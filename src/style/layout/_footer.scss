@@ -2,6 +2,8 @@
 // FOOTER
 // ===
 
+@import "../utilities/_units";
+
 footer {
   width: 100vw;
   height: 100vh;
@@ -65,6 +67,10 @@ footer {
     @include breakpoint(medium) {
       padding: 0;
     }
+
+    @include breakpoint(small) {
+      margin-top: $unit700;
+    }
   }
 
   .bottom-row {
@@ -113,6 +119,11 @@ footer {
           display: inline-block;
           transform: translateX(4px) translateY(2px);
           transition: $fast $ease all;
+
+          @include breakpoint(small) {
+            width: 0.8em;
+            height: 0.8em;
+          }
         }
 
         &:hover {
@@ -125,7 +136,7 @@ footer {
 
       @include breakpoint(small) {
         flex-direction: column;
-        margin-bottom: $unit600;
+        margin-bottom: $unit400;
 
         a {
           height: $unit300;
