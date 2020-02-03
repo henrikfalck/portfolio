@@ -1,5 +1,8 @@
+@import "../colors";
+
 a {
   color: rgba($color-black, 0.7);
+  font-size: inherit;
 
   &:hover,
   &:active {
