@@ -120,12 +120,7 @@ export const PROJECTQUERY = graphql`
       featured_media {
         localFile {
           childImageSharp {
-            fluid(
-              webpQuality: 100
-              toFormat: WEBP
-              fit: COVER
-              maxWidth: 2560
-            ) {
+            fluid(webpQuality: 100, toFormat: PNG, fit: COVER, maxWidth: 2560) {
               ...GatsbyImageSharpFluid
             }
           }
