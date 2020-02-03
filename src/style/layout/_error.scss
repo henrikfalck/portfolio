@@ -1,0 +1,40 @@
+@import "../base.scss";
+
+.error {
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  padding: $unit300;
+
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1,
+    h6,
+    p {
+      color: white;
+    }
+
+    @include breakpoint(small) {
+      height: 100vh;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      margin: $unit400 0;
+      font-size: 1rem !important;
+    }
+
+    .button-primary {
+      max-width: calc(100vw - 48px) !important;
+      position: absolute;
+      left: $unit300;
+      bottom: $unit300;
+    }
+  }
+}
