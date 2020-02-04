@@ -4,7 +4,7 @@
 
 header {
   width: 100vw;
-  padding: $unit300;
+  padding: $unit400;
   box-sizing: border-box;
   margin: 0;
   top: 0;
@@ -15,6 +15,10 @@ header {
   justify-content: space-between;
   z-index: 999999 !important;
   mix-blend-mode: difference;
+
+  @include breakpoint(medium) {
+    padding: $unit300 !important;
+  }
 
   svg {
     height: 100px;
