@@ -9,3 +9,9 @@ a {
     color: rgba($color-black, 1);
   }
 }
+
+.link-active {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  color: inherit;
+}
