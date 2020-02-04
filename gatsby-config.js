@@ -29,7 +29,13 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-image`,
-    `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-transition-link`,
+      options: {
+        layout: require.resolve(`./src/brand-components/logo.js`),
+      },
+    },
+    `gsap`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
