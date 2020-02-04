@@ -5,7 +5,7 @@ import Footer from "./footer"
 
 import "../style/base.scss"
 import "../style/typography/fonts/fontface.scss"
-import "../style/projectpage.scss"
+// import "../style/projectpage.scss"
 
 const Layout = ({ children }) => {
   return (
