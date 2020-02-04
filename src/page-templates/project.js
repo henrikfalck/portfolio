@@ -22,7 +22,7 @@ const ProjectTemplate = ({ data }) => {
           fluid={
             data.wordpressPost.featured_media.localFile.childImageSharp.fluid
           }
-          loading="lazy"
+          loading="eager"
           alt={data.wordpressPost.title}
         />
         <div className="project-hero--information-box desktop">
@@ -85,6 +85,7 @@ const ProjectTemplate = ({ data }) => {
           <Img
             key={item.localFile.id}
             fluid={item.localFile.childImageSharp.fluid}
+            loading="lazy"
           />
         ))}
       </ProjectContent>
