@@ -5,3 +5,22 @@
  */
 
 // You can delete this file if you're not using it
+
+/* exports.onRouteUpdate = () => {
+  window.scrollTo(0, 0)
+} */
+
+/* exports.shouldUpdateScroll = () => {
+  return true
+} */
+
+exports.shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition,
+}) => {
+  if (location.hash) {
+    return false
+  }
+
+  return true
+}
