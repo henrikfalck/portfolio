@@ -14,7 +14,7 @@
     "update": "clear && echo \"Checking for updated packages...\" && echo \"\" && sleep 4 && yarn upgrade -L && sleep 2 && clear && echo \"Packages updated.\""
   },
   "dependencies": {
-    "gatsby": "^2.19.11",
+    "gatsby": "^2.19.12",
     "gatsby-cli": "^2.8.29",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
