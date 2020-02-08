@@ -1,0 +1,77 @@
+@import "src/style/base.scss";
+
+.about--lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $color-black;
+  padding: $unit400;
+  margin-top: $unit500;
+  width: inherit;
+
+  .software,
+  .write {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $color-white;
+      margin-bottom: $unit300;
+    }
+
+    .arrow-list {
+      list-style-type: none;
+      color: $color-white;
+      padding: 0;
+
+      li {
+        line-height: 1.4;
+      }
+
+      li::before {
+        content: "->";
+        font-family: "Inter";
+        padding-right: $unit100;
+      }
+    }
+  }
+}
+
+.bucketlist {
+  height: 110vh;
+  width: 100vw;
+  background: $color-gray-dark;
+  display: flex;
+  flex-direction: column;
+  padding: $unit900;
+  align-content: flex-end;
+  justify-content: center;
+  color: white;
+
+  h1 {
+    margin-bottom: $unit500;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    @extend h5;
+    font-weight: 400;
+
+    .bucketlist--item {
+      & + .bucketlist--item {
+        margin-top: $unit300;
+      }
+
+      &::before {
+        content: "\2713";
+        margin-right: $unit100;
+        opacity: 0;
+      }
+
+      &.done::before {
+        opacity: 1;
+      }
+    }
+  }
+}
