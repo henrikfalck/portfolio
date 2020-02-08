@@ -45,8 +45,82 @@
   }
 }
 
-body {
-  background-color: $color-black !important;
+.contact-page,
+.about-page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: $unit700;
+  flex-direction: column;
+
+  @include breakpoint(small) {
+    padding: $unit300;
+  }
+
+  .Wrapper {
+    align-self: center;
+
+    h1 {
+      margin-bottom: $unit500;
+      color: $color-pale-yellow;
+    }
+
+    p {
+      max-width: 768px;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.contact-page {
+  background: $color-black;
+
+  p {
+    color: white;
+  }
+}
+
+.about-page {
+  background: $color-pale-yellow;
+  padding-bottom: 0;
+
+  .Wrapper {
+    align-self: flex-start !important;
+    padding-top: $unit900;
+    margin: auto 0 auto $unit300 !important;
+
+    h1 {
+      color: $color-black;
+    }
+  }
+
+  .about--content {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      max-width: 768px;
+    }
+
+    @include breakpoint(small) {
+      flex-direction: column;
+
+      p + .gatsby-image-wrapper {
+        margin-left: 0;
+        margin-top: $unit400;
+      }
+    }
+  }
+
+  .gatsby-image-wrapper {
+    position: absolute !important;
+    top: 88px;
+    right: 0;
+    width: 500px;
+  }
 }
 
 // ===
