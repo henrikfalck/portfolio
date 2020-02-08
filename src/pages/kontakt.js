@@ -8,9 +8,20 @@ const ContactPage = () => (
       title="Kontakt meg"
       description="Henrik Falck Mentzoni er en faglært mediegrafiker som fokuserer på UI-design og front-end utvikling."
     />
-    <Wrapper width={1440} center>
-      <h1>Hei på deg!</h1>
-    </Wrapper>
+    <section className="contact-page">
+      <Wrapper width={1440} center>
+        <h1 className="display">Kontakt</h1>
+        <p>
+          Vil du ta en kaffe? Kanskje snakke om et kult prosjekt du vil ha
+          gjennomført? Send meg en epost på{" "}
+          <a href="mailto:hei@henrikfalck.no">hei@henrikfalck.no</a>, så snakkes
+          vi{" "}
+          <span role="image" aria-label="emoji">
+            🤙
+          </span>
+        </p>
+      </Wrapper>
+    </section>
   </Layout>
 )
 
