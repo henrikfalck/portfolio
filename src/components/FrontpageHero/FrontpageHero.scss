@@ -3,14 +3,13 @@
 .hero {
   height: 100vh;
   width: 100vw;
-  background-color: $color-pale-yellow;
+  background-color: $color-black;
   display: flex;
   padding: $unit300;
 
   h1 {
     width: inherit;
-    transform: skewY(-2deg);
-    color: $color-black;
+    color: $color-pale-yellow;
 
     span {
       margin-top: 0;
