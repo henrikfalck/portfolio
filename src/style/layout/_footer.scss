@@ -113,24 +113,7 @@ footer {
         }
 
         .icon {
-          width: 0.8rem;
-          height: 0.8rem;
-          fill: rgba($color-white, 0.8);
-          display: inline-block;
-          transform: translateX(4px) translateY(2px);
-          transition: $fast $ease all;
-
-          @include breakpoint(small) {
-            width: 0.8em;
-            height: 0.8em;
-          }
-        }
-
-        &:hover {
-          .icon {
-            transform: translateX(8px) translateY(2px);
-            fill: rgba($color-white, 1);
-          }
+          fill: rgba(#fff, 0.8);
         }
       }
 
