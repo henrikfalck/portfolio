@@ -1,6 +1,6 @@
 import React from "react"
 import Wrapper from "../components/wrapper"
-import { IconExternalLink } from "../components/icons"
+import { ExternalLink } from "../components/links"
 
 const Footer = () => (
   <footer>
@@ -16,42 +16,21 @@ const Footer = () => (
     <Wrapper width={1440}>
       <div className="bottom-row">
         <div className="social-links">
-          <a
-            href="https://behance.com/henrikfalck"
-            className="external-link"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Behance"
+          <ExternalLink to="https://behance.net/henrikfalck" aria="Behance">
+            Behance
+          </ExternalLink>
+          <ExternalLink to="https://dribbble.com/henrikfalck" aria="Dribbble">
+            Dribbble
+          </ExternalLink>
+          <ExternalLink to="https://github.com/henrikfalck" aria="Github">
+            Github
+          </ExternalLink>
+          <ExternalLink
+            to="https://instagram.com/henrikfalck_"
+            aria="Instagram"
           >
-            Behance <IconExternalLink />
-          </a>
-          <a
-            href="https://behance.com/henrikfalck"
-            className="external-link"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Dribble"
-          >
-            Dribbble <IconExternalLink />
-          </a>
-          <a
-            href="https://github.com/henrikfalck"
-            className="external-link"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Github"
-          >
-            Github <IconExternalLink />
-          </a>
-          <a
-            href="https://instagram.com/henrikfalck_"
-            className="external-link"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Instagram"
-          >
-            Instagram <IconExternalLink />
-          </a>
+            Instagram
+          </ExternalLink>
         </div>
         <div className="copyright">
           <p>© {new Date().getFullYear()}. Ikke stjel, er du snill.</p>
