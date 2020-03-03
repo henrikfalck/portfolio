@@ -8,7 +8,7 @@ const ProjectContent = ({ children, text }) => (
   <section className="project-content">
     <Wrapper width={768} center>
       <div
-        className="project-content--text"
+        className="project-content--text sa-animate"
         dangerouslySetInnerHTML={{ __html: text }}
       ></div>
     </Wrapper>
