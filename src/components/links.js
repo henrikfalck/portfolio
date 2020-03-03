@@ -31,7 +31,7 @@ export const AnimatedLink = ({ to, children, aria }) => (
     title={aria}
     aria-label={aria}
     cover
-    direction="down"
+    direction="left"
     duration={1.5}
     bg="#080a09"
   >
