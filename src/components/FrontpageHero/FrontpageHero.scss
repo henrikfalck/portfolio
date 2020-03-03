@@ -1,7 +1,8 @@
 @import "src/style/base.scss";
 
 .hero {
-  height: 70vh;
+  min-height: 600px;
+  height: 90vh;
   width: 100vw;
   background-color: $color-black;
   display: flex;
@@ -102,13 +103,13 @@
 
     .Wrapper {
       padding: 0;
-      margin: 0 auto !important;
+      margin: auto !important;
       width: 100%;
     }
   }
 
   .Wrapper {
-    margin: 0 auto 10vh !important;
+    margin: auto;
     align-self: flex-end;
   }
 }
