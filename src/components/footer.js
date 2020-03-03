@@ -7,10 +7,14 @@ const Footer = () => (
     <Wrapper width={1440}>
       <div className="contact">
         <h1 className="display">Vil du ta en prat?</h1>
-        <h6>
+        <p>
           Send meg en e-post på{" "}
-          <a href="mailto:hallo@henrikfalck.no">hallo@henrikfalck.no</a>
-        </h6>
+          <a href="mailto:hallo@henrikfalck.no">hallo@henrikfalck.no</a>, så
+          sees vi{" "}
+          <span role="img" aria-label="Emoji">
+            🤙
+          </span>
+        </p>
       </div>
     </Wrapper>
     <Wrapper width={1440}>
@@ -30,6 +34,12 @@ const Footer = () => (
             aria="Instagram"
           >
             Instagram
+          </ExternalLink>
+          <ExternalLink
+            to="https://www.linkedin.com/in/henrik-falck/"
+            aria="LinkedIn"
+          >
+            LinkedIn
           </ExternalLink>
         </div>
         <div className="copyright">
