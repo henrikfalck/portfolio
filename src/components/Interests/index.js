@@ -1,37 +1,29 @@
 import React from "react"
 import "./interests.scss"
-export const Interests = () => (
-  <section className="about--lists">
-    <div className="software">
-      <h2>Jeg jobber i …</h2>
-      <ul className="arrow-list">
-        <li>Sketch</li>
-        <li>Adobe</li>
-        <li>VS Code</li>
-      </ul>
-    </div>
-    <div className="write">
-      <h2>Jeg skriver …</h2>
-      <ul className="arrow-list">
-        <li>ReactJS</li>
-        <li>Sass</li>
-        <li>GraphQL</li>
-        <li>Javascript</li>
-      </ul>
-    </div>
+export const Music = () => (
+  <section id="music">
+    <h1>
+      Spillelistene mine består av Bring Me The Horizon, Dayseeker, Dunderbeist,
+      Fit For A King, Ice Nine Kills, In Flames, Kvelertak, Memphis May Fire,
+      Motionless In White, Northlane, Polaris, Slipknot, The Dogs, Void Of
+      Vision, Wage War, Watch Out Stampede og Written by Wolves.
+      <p>Det er mye metalcore her altså. Interessant.</p>
+    </h1>
   </section>
 )
 export const Bucketlist = () => (
-  <section className="bucketlist">
-    <h1 className="display">Bucketlist</h1>
-    <ul>
-      <li className="bucketlist--item done">Publisere porteføljen</li>
-      <li className="bucketlist--item">Få meg hund</li>
-      <li className="bucketlist--item">Starte eget byrå</li>
-      <li className="bucketlist--item">Lære meg Python</li>
-      <li className="bucketlist--item">Se Bring Me The Horizon live</li>
-      <li className="bucketlist--item">Få egne visittkort</li>
-      <li className="bucketlist--item">Flytte til Oslo</li>
-    </ul>
+  <section id="bucketlist">
+    <h1>
+      Bucketlisten min består av å <span class="item">starte eget byrå</span>,{" "}
+      <span className="item">få meg hund</span>,{" "}
+      <span className="item">lære meg Python</span>,{" "}
+      <span className="item done">få egne visittkort</span>,{" "}
+      <span className="item">flytte til Oslo</span>,{" "}
+      <span className="item done">publisere porteføljen</span>,{" "}
+      <span className="item">levere bachelor-oppgaven</span>,{" "}
+      <span className="item">reise til Skottland</span>,{" "}
+      <span className="item">reise til Roma</span>, og{" "}
+      <span className="item">jobbe med en stor kunde</span>.
+    </h1>
   </section>
 )
