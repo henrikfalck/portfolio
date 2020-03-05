@@ -15,7 +15,13 @@ const SelfPortrait = () => {
     }
   `)
 
-  return <Img className="portrait" fluid={data.file.childImageSharp.fluid} />
+  return (
+    <Img
+      className="portrait"
+      loading="eager"
+      fluid={data.file.childImageSharp.fluid}
+    />
+  )
 }
 
 export default SelfPortrait
