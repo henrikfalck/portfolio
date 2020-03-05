@@ -1,65 +1,50 @@
 @import "src/style/base.scss";
 
 .project-content {
-  width: 100vw;
-  background: $color-black;
-  color: white;
+  width: inherit;
   display: block;
-  /* 
-  @include breakpoint(small) {
-    position: absolute;
-    top: 100vh;
-  } */
 
   .project-content--text {
-    padding: $unit900 $unit400;
-    text-align: center;
+    width: auto;
+    max-width: 768px;
+    margin: 64px auto;
 
-    p + p {
-      margin-top: $unit300;
-    }
+    p {
+      font-size: 22px !important;
 
-    @include breakpoint(small) {
-      padding: $unit900 $unit300;
-      text-align: left;
+      & + p {
+        margin-top: 22px;
+      }
+
+      @include breakpoint(medium) {
+        font-size: 20px;
+
+        & + p {
+          margin-top: 20px;
+        }
+      }
     }
   }
 
   .project-content--images {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    width: calc(100vw - 96px);
+
+    @include breakpoint(medium) {
+      width: calc(100vw - 64px);
+    }
+
+    @include breakpoint(small) {
+      width: calc(100vw - 48px);
+      min-height: 400px;
+    }
 
     .gatsby-image-wrapper {
-      width: 85vw;
-      min-width: 768px;
-      display: inline-flex;
-      align-self: flex-end;
+      width: inherit;
 
-      & + .gatsby-image-wrapper {
-        margin-top: $unit600;
-      }
-
-      &:nth-of-type(2n) {
-        align-self: flex-start;
-      }
-
-      @include breakpoint(medium) {
-        min-width: calc(100vw - 80px);
-        height: 512px;
-
-        &:nth-of-type(1n) {
-          align-self: center;
-        }
-
-        & + .gatsby-image-wrapper {
-          margin-top: $unit500;
-        }
-      }
-
-      @include breakpoint(small) {
-        width: 100vw;
-        height: 100vw;
+      img,
+      picture {
+        height: 100%;
+        width: 100%;
       }
     }
   }
