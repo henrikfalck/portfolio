@@ -46,3 +46,18 @@
     opacity: 1;
   }
 }
+
+@keyframes ContactEmojiSpin {
+  0% {
+    transform: rotate(0deg) !important;
+  }
+  25% {
+    transform: rotate(-30deg) !important;
+  }
+  75% {
+    transform: rotate(30deg) !important;
+  }
+  100% {
+    transform: rotate(0deg) !important;
+  }
+}
