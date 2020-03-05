@@ -1,31 +1,21 @@
 import React, { Component } from "react"
 import Logo from "../brand-components/logo"
-// import { Link } from "gatsby"
-import { AnimatedLink } from "./links"
+import { Link } from "gatsby"
 
 export default class Header extends Component {
   render() {
     return (
       <header>
-        <AnimatedLink to="/" aria="Forside og prosjekter">
+        <Link to="/" aria="Lenke til forsiden">
           <Logo />
-        </AnimatedLink>
+        </Link>
         <nav className="navigation">
           <ul>
             <li className="navigation--link">
-              <AnimatedLink to="/" aria="Forside og prosjekter">
-                Prosjekter
-              </AnimatedLink>
+              <Link to="/">Prosjekter</Link>
             </li>
             <li className="navigation--link">
-              <AnimatedLink to="/om" aria="Om meg">
-                Om
-              </AnimatedLink>
-            </li>
-            <li className="navigation--link">
-              <AnimatedLink to="/kontakt" aria="Kontakt meg">
-                Kontakt
-              </AnimatedLink>
+              <Link to="/om">Om meg</Link>
             </li>
           </ul>
         </nav>
