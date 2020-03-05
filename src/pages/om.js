@@ -30,10 +30,10 @@ const AboutPage = () => (
           <ExternalLink to="https://jobsfordesigners.com">
             Jobs For Designers
           </ExternalLink>
-          <br />
+          {/* <br />
           <br />
           Sommeren 2020 flyttet jeg og kjæresten til Oslo, hvor jeg nå tar
-          bachelor i grafisk design ved Høyskolen Kristiania.
+          bachelor i grafisk design ved Høyskolen Kristiania. */}
           <br />
           <br />
           Formgivning er noe jeg har vært glad i siden jeg var liten – utallige
