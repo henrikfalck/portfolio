@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { IconExternalLink } from "./icons"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 // <ExternalLink to=""></ExternalLink>
@@ -13,7 +12,7 @@ export const ExternalLink = ({ to, children, aria }) => (
     title={aria}
     aria-label={aria}
   >
-    {children} <IconExternalLink />
+    {children}
   </a>
 )
 
