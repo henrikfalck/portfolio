@@ -34,7 +34,7 @@ const ProjectTemplate = ({ data }) => {
           <Img
             key={item.localFile.id}
             fluid={item.localFile.childImageSharp.fluid}
-            loading="lazy"
+            loading="eager"
           />
         ))}
       </ProjectContent>
