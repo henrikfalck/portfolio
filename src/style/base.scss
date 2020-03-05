@@ -28,7 +28,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 
   // Remove all animations and transitions for users
   // who prefers reduced motion. ".keep-motion" allows
@@ -45,81 +44,19 @@
   }
 }
 
-.contact-page,
-.about-page {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  padding: $unit700;
-  flex-direction: column;
+body {
+  background-color: black;
 
   @include breakpoint(small) {
-    padding: $unit300;
+    $padding: 24px;
   }
 
-  .Wrapper {
-    align-self: center;
-
-    h1 {
-      margin-bottom: $unit500;
-      color: $color-pale-yellow;
-    }
-
-    p {
-      max-width: 768px;
-
-      a {
-        color: inherit;
-      }
-    }
-  }
-}
-
-.contact-page {
-  background: $color-black;
-
-  p {
-    color: white;
-  }
-}
-
-.about-page {
-  background: $color-pale-yellow;
-  padding-bottom: 0;
-
-  .Wrapper {
-    align-self: flex-start !important;
-    padding-top: $unit900;
-    margin: auto 0 auto $unit300 !important;
-
-    h1 {
-      color: $color-black;
-    }
+  @include breakpoint(medium) {
+    $padding: 32px;
   }
 
-  .about--content {
-    display: flex;
-    flex-direction: row;
-
-    p {
-      max-width: 768px;
-    }
-
-    @include breakpoint(small) {
-      flex-direction: column;
-
-      p + .gatsby-image-wrapper {
-        margin-left: 0;
-        margin-top: $unit400;
-      }
-    }
-  }
-
-  .gatsby-image-wrapper {
-    position: absolute !important;
-    top: 88px;
-    right: 0;
-    width: 500px;
+  @include breakpoint(large) {
+    $padding: 48px;
   }
 }
 
@@ -150,3 +87,28 @@ $ease-in: cubic-bezier(0.41, 0.03, 1, 1);
 $ease-out: cubic-bezier(0, 0.08, 0.47, 1);
 $ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
 $bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);
+
+// PAGES
+// About
+.about-page {
+  width: inherit;
+
+  .content {
+    min-height: 100vh;
+    display: flex;
+
+    p {
+      max-width: 768px;
+      align-self: center;
+      font-size: 22px;
+    }
+
+    .portrait {
+      width: calc(100vw - 768px);
+      max-width: 600px;
+      position: absolute !important;
+      top: 120px;
+      right: 0;
+    }
+  }
+}
