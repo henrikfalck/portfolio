@@ -2,7 +2,7 @@
   "name": "henrikfalck-starter",
   "private": false,
   "description": "A simple start with a simple framework, plus a few custom commands and snippets.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
