@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const SelfPortrait = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "henrik.png" }) {
+      file(relativePath: { eq: "headshot-test.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -16,11 +16,14 @@ const SelfPortrait = () => {
   `)
 
   return (
-    <Img
-      className="portrait"
-      loading="eager"
-      fluid={data.file.childImageSharp.fluid}
-    />
+    <>
+      <div className="portrait">
+        <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
+        <p>
+          <span className="inter">↑</span> Bilde: Alo Uten Like
+        </p>
+      </div>
+    </>
   )
 }
 
