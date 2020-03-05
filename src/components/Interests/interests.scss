@@ -9,6 +9,10 @@
   h1 {
     align-self: center;
   }
+
+  @include breakpoint(small) {
+    padding-top: 64px;
+  }
 }
 
 #music {
