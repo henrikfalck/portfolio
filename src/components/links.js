@@ -9,7 +9,7 @@ export const ExternalLink = ({ to, children, aria }) => (
     className="external-link"
     rel="noopener noreferrer"
     target="_blank"
-    title={aria}
+    title={children}
     aria-label={aria}
   >
     {children}
