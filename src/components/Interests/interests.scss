@@ -11,7 +11,12 @@
   }
 
   @include breakpoint(small) {
-    padding-top: 64px;
+    padding-top: 10vh;
+    height: auto !important;
+
+    h1 {
+      align-self: flex-start;
+    }
   }
 }
 
