@@ -6,11 +6,13 @@ const Footer = () => (
     <div className="contact">
       <h1>Vil du ta en kaffe?</h1>
       <h5>
-        <a href="mailto:hallo@henrikfalck.no">hallo@henrikfalck.no</a>
-        <span class="call-me" role="img" aria-label="Vi sees">
-          {" "}
-          🤙
-        </span>
+        <a href="mailto:hallo@henrikfalck.no">
+          hallo@henrikfalck.no
+          <span class="call-me" role="img" aria-label="Vi sees">
+            {" "}
+            🤙
+          </span>
+        </a>
       </h5>
     </div>
     <div className="bottom-row">
