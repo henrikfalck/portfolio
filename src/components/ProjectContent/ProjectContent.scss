@@ -41,6 +41,10 @@
     .gatsby-image-wrapper {
       width: inherit;
 
+      & + .gatsby-image-wrapper {
+        margin-top: $unit400;
+      }
+
       img,
       picture {
         height: 100%;
