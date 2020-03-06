@@ -3,6 +3,7 @@
 // ===
 
 @import "../utilities/_units";
+// @import "../utilities/_animations";
 
 footer {
   width: 100vw;
@@ -35,6 +36,23 @@ footer {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+
+    h1 {
+      margin: $unit200 0;
+    }
+
+    a {
+      .call-me {
+        display: inline-block;
+        margin-left: 12px;
+        transition: 0.3s ease all;
+        transform-origin: 0% 70%;
+      }
+
+      &:hover .call-me {
+        transform: rotate(-15deg);
+      }
+    }
   }
 
   .bottom-row {
