@@ -12,10 +12,25 @@
   }
 
   .information {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-self: center;
     justify-self: center;
+    justify-content: center;
     flex-direction: column;
+
+    @include breakpoint(large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint(medium) {
+      padding-right: 32px;
+    }
+
+    @include breakpoint(small) {
+      padding-right: 24px;
+    }
 
     h1,
     h3 {
