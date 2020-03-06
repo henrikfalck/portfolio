@@ -47,7 +47,7 @@ h1 {
     font-size: 6rem;
 
     @include breakpoint(medium) {
-      font-size: 3.2rem;
+      font-size: 3.2rem !important;
     }
   }
 }
