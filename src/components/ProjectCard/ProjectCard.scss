@@ -1,11 +1,10 @@
 @import "src/style/base.scss";
 
 .project-card {
-  max-height: calc(100vh - 73px);
   width: inherit;
 
   & + .project-card {
-    margin-top: 80px;
+    margin-top: 64px;
   }
 
   a {
@@ -32,6 +31,15 @@
         justify-content: space-evenly;
         text-align: right;
         opacity: 0.8;
+      }
+
+      @include breakpoint(small) {
+        flex-direction: column;
+
+        .right {
+          text-align: left;
+          margin-top: 8px;
+        }
       }
     }
   }
