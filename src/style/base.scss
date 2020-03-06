@@ -101,14 +101,19 @@ $bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);
     justify-content: space-between;
 
     p {
-      max-width: 768px;
+      max-width: 60ch;
       align-self: center;
       font-size: 22px;
+      padding-right: $unit600;
+
+      @include breakpoint(small) {
+        padding-right: 0;
+      }
     }
 
     .portrait {
       width: 600px;
-      align-self: center;
+      align-self: flex-end;
 
       .gatsby-image-wrapper {
         height: 768px;
@@ -132,7 +137,6 @@ $bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);
       .portrait {
         width: calc(100vw - 48px);
         max-width: 540px;
-        align-self: flex-end;
         margin-top: 48px;
 
         .gatsby-image-wrapper {
