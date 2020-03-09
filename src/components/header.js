@@ -6,7 +6,7 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <Link to="/" aria="Lenke til forsiden">
+        <Link to="/" aria-label="Lenke til forsiden">
           <Logo />
         </Link>
         <nav className="navigation">
