@@ -20,7 +20,7 @@ const SelfPortrait = () => {
       <div className="portrait">
         <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
         <p>
-          <span className="inter">↑</span> Bilde: Alo Uten Like
+          <span className="arrow">↑</span> Bilde: Alo Uten Like
         </p>
       </div>
     </>
