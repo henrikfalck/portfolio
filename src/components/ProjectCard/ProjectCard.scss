@@ -3,10 +3,6 @@
 .project-card {
   width: inherit;
 
-  & + .project-card {
-    margin-top: 64px;
-  }
-
   a {
     color: $color-white !important;
     text-decoration: none;
@@ -31,6 +27,10 @@
         justify-content: space-evenly;
         text-align: right;
         opacity: 0.8;
+
+        p {
+          font-variant-numeric: tabular-nums;
+        }
       }
 
       @include breakpoint(small) {
