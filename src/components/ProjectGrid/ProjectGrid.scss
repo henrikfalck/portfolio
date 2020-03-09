@@ -4,4 +4,8 @@
   width: inherit;
   height: auto;
   display: block;
+
+  .project-card + .project-card {
+    margin-top: $unit800;
+  }
 }
