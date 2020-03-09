@@ -5,11 +5,12 @@
   display: block;
 
   .project-content--text {
-    width: auto;
-    max-width: 768px;
-    margin: 64px auto;
+    max-width: 75ch;
+    padding: $unit900 0;
+    margin: 0 auto;
 
     p {
+      text-align: center;
       font-size: 22px !important;
 
       & + p {
@@ -27,22 +28,16 @@
   }
 
   .project-content--images {
-    width: calc(100vw - 96px);
-
-    @include breakpoint(medium) {
-      width: calc(100vw - 64px);
-    }
-
-    @include breakpoint(small) {
-      width: calc(100vw - 48px);
-      min-height: 400px;
-    }
+    width: inherit;
 
     .gatsby-image-wrapper {
-      width: inherit;
+      //max-width: 80vw;
+      margin: 0 auto;
+      height: auto;
+      width: auto;
 
       & + .gatsby-image-wrapper {
-        margin-top: $unit400;
+        margin-top: $unit600 !important;
       }
 
       img,
