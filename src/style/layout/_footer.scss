@@ -45,13 +45,12 @@ footer {
       .call-me {
         display: inline-block;
         margin-left: 12px;
-        transition: 0.2s ease all;
+        transition: 0.1s ease-in-out all;
         transform-origin: 5% 65%;
       }
 
       &:hover .call-me {
         transform: rotate(-10deg);
-        margin-left: 13px;
       }
     }
   }
