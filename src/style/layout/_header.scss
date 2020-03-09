@@ -6,7 +6,6 @@ header {
   width: 100vw;
   padding: $unit500;
   box-sizing: border-box;
-  margin: 0;
   top: 0;
   left: 0;
   position: fixed;
@@ -17,7 +16,11 @@ header {
   mix-blend-mode: difference;
 
   @include breakpoint(medium) {
-    padding: $unit300 !important;
+    padding: $unit400;
+  }
+
+  @include breakpoint(small) {
+    padding: $unit300;
   }
 
   svg {
