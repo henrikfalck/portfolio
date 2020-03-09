@@ -12,7 +12,7 @@ const ProjectTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={data.wordpressPost.acf.client}
+        title={data.wordpressPost.title}
         description={data.wordpressPost.acf.work_title}
       />
       <section className="project-hero">
@@ -35,6 +35,7 @@ const ProjectTemplate = ({ data }) => {
             key={item.localFile.id}
             fluid={item.localFile.childImageSharp.fluid}
             loading="eager"
+            className="sa-animate"
           />
         ))}
       </ProjectContent>
@@ -58,19 +59,25 @@ export const PROJECTQUERY = graphql`
         project_images {
           slug
           localFile {
+            id
             childImageSharp {
-              fluid {
+              fluid(
+                toFormat: PNG
+                quality: 100
+                maxHeight: 2560
+                fit: CONTAIN
+              ) {
                 ...GatsbyImageSharpFluid
               }
-              id
             }
           }
         }
       }
       featured_media {
         localFile {
+          id
           childImageSharp {
-            fluid(webpQuality: 100, toFormat: PNG, fit: COVER, maxWidth: 2560) {
+            fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
               ...GatsbyImageSharpFluid
             }
           }
