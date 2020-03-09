@@ -29,8 +29,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-image`,
-    `gatsby-plugin-transition-link`,
-    `gsap`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -78,14 +76,6 @@ module.exports = {
         },
       },
     },
-    // ==========================================
-    // FACEBOOK PIXEL
-    // {
-    //   resolve: `gatsby-plugin-facebook-pixel`,
-    //   options: {
-    //     pixelId: "pixel id here",
-    //   },
-    // },
     // ==========================================
     // GOOGLE ANALYTICS
     {
