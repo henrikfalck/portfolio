@@ -8,7 +8,7 @@ const Footer = () => (
       <h5>
         <a href="mailto:hallo@henrikfalck.no">
           hallo@henrikfalck.no
-          <span class="call-me" role="img" aria-label="Vi sees">
+          <span className="call-me" role="img" aria-label="Vi sees">
             {" "}
             🤙
           </span>

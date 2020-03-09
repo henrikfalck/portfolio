@@ -14,7 +14,8 @@ export const Music = () => (
 export const Bucketlist = () => (
   <section id="bucketlist">
     <h1>
-      Bucketlisten min består av å <span class="item">starte eget byrå</span>,{" "}
+      Bucketlisten min består av å{" "}
+      <span className="item">starte eget byrå</span>,{" "}
       <span className="item">få meg hund</span>,{" "}
       <span className="item">lære meg Python</span>,{" "}
       <span className="item done">få egne visittkort</span>,{" "}
