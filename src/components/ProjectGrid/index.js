@@ -20,7 +20,7 @@ const ProjectGrid = () => (
               featured_media {
                 localFile {
                   childImageSharp {
-                    fluid {
+                    fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
                       ...GatsbyImageSharpFluid
                     }
                   }
