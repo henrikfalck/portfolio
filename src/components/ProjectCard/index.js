@@ -10,6 +10,7 @@ const ProjectCard = ({ client, slug, img, year, categories }) => (
         fluid={img}
         loading="lazy"
         alt={client}
+        objectPosition="50% 50%"
         placeholderStyle={{ backgroundColor: "#bebebe" }}
       />
       <div className="project--information">
