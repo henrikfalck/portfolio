@@ -1,21 +1,19 @@
 import React from "react"
 import "./interests.scss"
 export const Music = () => (
-  <section id="music" data-sal="fade">
-    <h1>
+  <section id="music">
+    <h1 data-sal="fade">
       Spillelistene mine inneholder mye fra Bring Me The Horizon, Dayseeker,
       Dunderbeist, Fit For A King, Ice Nine Kills, In Flames, Kvelertak, Memphis
       May Fire, Motionless In White, Northlane, Polaris, Slipknot, The Dogs,
       Void Of Vision, Wage War, Watch Out Stampede og Written by Wolves.
-      <span role="img" aria-label="Rocke-emoji">
-        🤟
-      </span>
+      <p>Det er mye screaming her altså. Interessant.</p>
     </h1>
   </section>
 )
 export const Bucketlist = () => (
-  <section id="bucketlist" data-sal="fade">
-    <h1>
+  <section id="bucketlist">
+    <h1 data-sal="fade">
       Bucketlisten min består av å{" "}
       <span className="item">starte eget digitalbyrå</span>,{" "}
       <span className="item">få meg hund</span>,{" "}
