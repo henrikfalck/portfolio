@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#060B07`,
-        theme_color: `#060B07`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
@@ -32,15 +32,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+        threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
         once: true, // Defines if animation needs to be launched once
         disable: false, // Flag for disabling animations
 
         // Advanced Options
         selector: "[data-sal]", // Selector of the elements to be animated
-        animateClassName: "sa-animate", // Class name which triggers animation
-        disabledClassName: "sa-disabled", // Class name which defines the disabled state
-        rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+        animateClassName: "sal-animate", // Class name which triggers animation
+        disabledClassName: "sal-disabled", // Class name which defines the disabled state
+        rootMargin: "0% 20%", // Corresponds to root's bounding box margin
         enterEventName: "sal:in", // Enter event name
         exitEventName: "sal:out", // Exit event name
       },
