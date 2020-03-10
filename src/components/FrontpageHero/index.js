@@ -8,7 +8,9 @@ const FrontpageHero = () => (
         className="display"
         aria-label="Mediegrafiker med fokus på UI-design og front end-utvikling"
       >
-        Mediegrafiker med fokus på UI og frontend-utvikling.
+        <span>Mediegrafiker</span> <span>med</span> <span>fokus</span>{" "}
+        <span>på</span> <span>UI</span> <span>og</span> <span>frontend-</span>
+        <span>utvikling.</span>
       </h1>
     </Wrapper>
   </section>
