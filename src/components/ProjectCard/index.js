@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import "./ProjectCard.scss"
 const ProjectCard = ({ client, slug, img, year, categories }) => (
-  <div className="project-card">
+  <div className="project-card" data-sal="fade">
     <Link to={slug}>
       <Img
         className="project--featured-media"
@@ -11,7 +11,7 @@ const ProjectCard = ({ client, slug, img, year, categories }) => (
         loading="lazy"
         alt={client}
         objectPosition="50% 50%"
-        placeholderStyle={{ backgroundColor: "#bebebe" }}
+        placeholderStyle={{ backgroundColor: "#242424" }}
       />
       <div className="project--information">
         <h2>{client}</h2>
