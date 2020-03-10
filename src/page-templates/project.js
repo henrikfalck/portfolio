@@ -31,12 +31,13 @@ const ProjectTemplate = ({ data }) => {
       </section>
       <ProjectContent text={data.wordpressPost.content}>
         {data.wordpressPost.acf.project_images.map(item => (
-          <Img
-            key={item.localFile.id}
-            fluid={item.localFile.childImageSharp.fluid}
-            loading="eager"
-            className="sa-animate"
-          />
+          <div className="image-container" data-sal="fade">
+            <Img
+              key={item.localFile.id}
+              fluid={item.localFile.childImageSharp.fluid}
+              loading="eager"
+            />
+          </div>
         ))}
       </ProjectContent>
     </Layout>
