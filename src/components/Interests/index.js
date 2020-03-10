@@ -8,7 +8,6 @@ export const Music = () => (
       Kvelertak, Memphis May Fire, Motionless In White, Northlane, Polaris,
       Slipknot, The Dogs, Void Of Vision, Wage War, Watch Out Stampede og
       Written by Wolves.
-      <p>Det er mye screaming her altså. Interessant.</p>
     </h1>
   </section>
 )
