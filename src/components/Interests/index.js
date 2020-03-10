@@ -7,7 +7,9 @@ export const Music = () => (
       Dunderbeist, Fit For A King, Ice Nine Kills, In Flames, Kvelertak, Memphis
       May Fire, Motionless In White, Northlane, Polaris, Slipknot, The Dogs,
       Void Of Vision, Wage War, Watch Out Stampede og Written by Wolves.
-      <p>Det er mye metalcore her altså. Interessant.</p>
+      <span role="img" aria-label="Rocke-emoji">
+        🤟
+      </span>
     </h1>
   </section>
 )
