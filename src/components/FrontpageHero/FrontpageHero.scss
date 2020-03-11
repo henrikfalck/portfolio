@@ -16,12 +16,12 @@
       line-height: 1;
 
       span {
-        animation: HeadingIn 1.2s linear 1.2s 1 normal both;
+        animation: HeadingIn 1.2s linear 0s 1 normal both;
 
         // Heading animation
-        @for $i from 1 to 9 {
+        @for $i from 2 to 9 {
           &:nth-of-type(#{$i}) {
-            animation-delay: $i * 0.09s;
+            animation-delay: $i * 0.075s;
           }
         }
       }
