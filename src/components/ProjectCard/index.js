@@ -14,7 +14,7 @@ const ProjectCard = ({ client, slug, img, year, categories }) => (
         placeholderStyle={{ backgroundColor: "#242424" }}
       />
       <div className="project--information">
-        <h2>{client}</h2>
+        <h3>{client}</h3>
         <div className="right">
           <p>{year}</p>
           <p>{categories}</p>
