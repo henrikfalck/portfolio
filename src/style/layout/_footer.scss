@@ -57,7 +57,8 @@ footer {
 
   .bottom-row {
     flex-direction: row;
-    justify-content: space-between;
+    align-self: flex-end;
+    justify-content: space-between !important;
 
     .social-links {
       a {
@@ -79,25 +80,32 @@ footer {
 
     // Mobile
     @include breakpoint(medium) {
+      height: auto !important;
       flex-direction: column;
+      justify-content: space-evenly;
+      background: red;
 
       .copyright {
         order: 3;
+        justify-self: flex-end;
+        margin-top: $unit300;
       }
 
       .made-with {
-        margin: $unit300 0;
         order: 2;
+        justify-items: center;
+        margin-top: $unit300;
       }
 
       .social-links {
         display: flex;
         flex-direction: column;
+        justify-self: flex-start;
         order: 1;
 
         a + a {
           margin-left: 0;
-          margin-top: $unit300;
+          margin-top: $unit200;
         }
       }
     }
