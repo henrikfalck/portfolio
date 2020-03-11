@@ -29,10 +29,10 @@ footer {
   .contact,
   .bottom-row {
     width: 100%;
-    display: inline-flex;
   }
 
   .contact {
+    display: inline-flex;
     height: 90vh;
     flex-direction: column;
     justify-content: center;
@@ -56,8 +56,10 @@ footer {
   }
 
   .bottom-row {
+    display: flex;
     flex-direction: row;
     align-self: flex-end;
+    justify-self: flex-end;
     justify-content: space-between !important;
 
     .social-links {
@@ -88,22 +90,19 @@ footer {
       .copyright {
         order: 3;
         margin-top: $unit300;
-        position: relative;
         background: green;
       }
 
       .made-with {
         order: 2;
-        margin-top: $unit300;
-        position: relative;
         background: blue;
       }
 
       .social-links {
         display: flex;
         flex-direction: column;
+        margin-bottom: $unit300;
         order: 1;
-        position: relative;
 
         a {
           background: purple;
