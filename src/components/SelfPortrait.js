@@ -8,7 +8,7 @@ const SelfPortrait = () => {
       file(relativePath: { eq: "headshot-test.jpg" }) {
         childImageSharp {
           fluid(toFormat: PNG, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
