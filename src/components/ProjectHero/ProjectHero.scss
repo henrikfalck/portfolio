@@ -31,13 +31,13 @@
     }
 
     h1,
-    h4 {
+    h3 {
       width: fit-content;
       animation: FadeHeroText 3s ease-out 0.6s 1 normal both;
       overflow-wrap: break-word;
     }
 
-    h4 {
+    h3 {
       margin-bottom: $unit300;
     }
   }
