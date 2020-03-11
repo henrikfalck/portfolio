@@ -34,6 +34,9 @@
   @media (prefers-reduced-motion: reduce) {
     &:not(.keep-motion) {
       transition: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
       animation: none !important;
       -webkit-animation: none !important;
       -moz-animation: none !important;
@@ -44,18 +47,7 @@
 
 body {
   background-color: black;
-
-  @include breakpoint(small) {
-    $padding: 24px;
-  }
-
-  @include breakpoint(medium) {
-    $padding: 32px;
-  }
-
-  @include breakpoint(large) {
-    $padding: 48px;
-  }
+  overflow-x: hidden;
 }
 
 // PAGES
