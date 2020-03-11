@@ -49,14 +49,14 @@
       }
 
       .gatsby-image-wrapper {
-        max-height: calc(100vh - ($unit500 * 2));
+        max-height: calc(100vh - (48px * 2));
 
         @include breakpoint(medium) {
-          max-height: calc(100vh - ($unit400 * 2));
+          max-height: calc(100vh - (32px * 2));
         }
 
         @include breakpoint(small) {
-          max-height: calc(100vh - ($unit300 * 2));
+          max-height: calc(100vh - (24px * 2));
         }
 
         img,
