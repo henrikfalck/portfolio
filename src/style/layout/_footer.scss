@@ -87,11 +87,13 @@ footer {
 
       .made-with {
         margin: $unit300 0;
+        order: 2;
       }
 
       .social-links {
         display: flex;
         flex-direction: column;
+        order: 1;
 
         a + a {
           margin-left: 0;
