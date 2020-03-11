@@ -46,8 +46,8 @@ const AboutPage = () => (
             var dette jeg ville gjøre.
             <br />
             <br />
-            Dette fulgte jeg opp med å ta svennebrevet i Mediegrafikerfaget. Det
-            var i denne tiden jeg fikk en interesse for koding, med Material
+            Dette fulgte jeg opp med å ta svennebrev i Mediegrafikerfaget. Det
+            var i denne tiden interessen for koding kom fram, med Material
             Design Lite og Dreamweaver (du leste riktig, Dreamweaver) som
             startslinjen min med HTML og ekstern CSS, blandet med en liten dæsj
             hjemmekokt CSS som ikke fungerte fordi jeg hadde glemt å importere
