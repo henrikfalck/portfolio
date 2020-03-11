@@ -11,7 +11,7 @@ const ErrorPage = () => (
     <Header />
     <section className="error">
       <Wrapper width={1440} center>
-        <h6>#404 — side ikke funnet</h6>
+        <h5>#404 — side ikke funnet</h5>
         <h1 className="display">Her har det skjedd en feil.</h1>
         <p>Dette er egentlig litt pinlig, heh...</p>
         <Link to="/">
