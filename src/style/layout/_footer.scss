@@ -3,13 +3,10 @@
 // ===
 
 @import "../utilities/_units";
-// @import "../utilities/_animations";
 
 footer {
   width: 100vw;
   height: 100vh;
-  background: $color-black;
-  color: $color-white;
   display: flex;
   flex-direction: column;
   padding: 0 $unit500 $unit500;
@@ -20,10 +17,6 @@ footer {
 
   @include breakpoint(small) {
     padding: 0 $unit300 $unit300;
-  }
-
-  * {
-    color: $color-white;
   }
 
   .contact,
@@ -55,68 +48,51 @@ footer {
     }
   }
 
+  // Bottom row -> Social links, credits and copyright
   .bottom-row {
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
-    justify-self: flex-end;
-    justify-content: space-between !important;
+    justify-content: space-between;
+
+    @include breakpoint(medium) {
+      flex-direction: column;
+    }
 
     .social-links {
+      display: flex;
+      flex-direction: row;
+
       a {
-        font-size: 1rem !important;
+        width: fit-content;
+        @extend p;
 
         & + a {
-          margin-left: $unit400;
+          margin-left: $unit300;
         }
+      }
 
-        @include breakpoint(medium) {
-          font-size: 0.9rem !important;
+      @include breakpoint(medium) {
+        flex-direction: column;
 
-          & + a {
-            margin-left: $unit300;
-          }
+        a + a {
+          margin-left: 0;
+          margin-top: $unit200;
         }
       }
     }
 
-    // Mobile
-    @include breakpoint(medium) {
-      height: auto !important;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background: red;
-
-      .copyright {
+    .copyright {
+      @include breakpoint(medium) {
         order: 3;
-        margin-top: $unit300;
-        background: green;
       }
+    }
 
-      .made-with {
+    .made-with {
+      @include breakpoint(medium) {
         order: 2;
-        background: blue;
-      }
-
-      .social-links {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: $unit300;
-        order: 1;
-
-        a {
-          background: purple;
-          width: fit-content;
-
-          & + a {
-            margin-left: 0;
-            margin-top: $unit200;
-          }
-
-          &:nth-of-type(2n) {
-            background: peru;
-          }
-        }
+        margin: $unit400 0;
       }
     }
   }
