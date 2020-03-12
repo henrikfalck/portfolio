@@ -2,8 +2,8 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import "./ProjectCard.scss"
-const ProjectCard = ({ client, slug, img, year, categories }) => (
-  <div className="project-card" data-sal="fade">
+const ProjectCard = ({ client, slug, img, year, categories, key }) => (
+  <div className="project-card" data-sal="fade" key={key}>
     <Link to={slug}>
       <Img
         className="project--featured-media"
