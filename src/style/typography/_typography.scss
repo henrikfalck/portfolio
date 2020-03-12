@@ -96,25 +96,5 @@ p {
 
   @include breakpoint(medium) {
     font-size: 0.9rem;
-
-    a {
-      font-size: inherit !important;
-    }
-  }
-
-  a {
-    font-size: inherit !important;
-  }
-}
-
-a {
-  font-size: inherit !important;
-
-  @include breakpoint(medium) {
-    font-size: inherit !important;
-  }
-
-  &:hover {
-    color: inherit !important;
   }
 }
