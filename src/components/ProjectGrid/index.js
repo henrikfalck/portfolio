@@ -37,7 +37,7 @@ const ProjectGrid = () => (
         <h2>Prosjekter</h2>
         {data.allWordpressPost.edges.map(item => (
           <ProjectCard
-            key={item.node.id}
+            id={item.node.id}
             slug={`/${item.node.slug}`}
             client={item.node.acf.client}
             year={item.node.date}
