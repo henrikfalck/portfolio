@@ -78,6 +78,8 @@ footer {
         height: fit-content;
         flex-direction: column;
         justify-self: flex-start;
+        position: relative;
+        bottom: 0px;
 
         a + a {
           margin-left: 0;
