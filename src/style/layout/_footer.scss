@@ -38,7 +38,6 @@ footer {
       .call-me {
         display: inline-block;
         margin-left: 12px;
-        transition: 0.1s ease-in-out all;
         transform-origin: 5% 65%;
       }
 
@@ -79,7 +78,7 @@ footer {
         flex-direction: column;
         justify-self: flex-start;
         position: relative;
-        bottom: 0px;
+        bottom: 128px;
 
         a + a {
           margin-left: 0;
