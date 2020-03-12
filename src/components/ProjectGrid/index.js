@@ -16,6 +16,7 @@ const ProjectGrid = () => (
                 client
               }
               date(formatString: "YYYY")
+              id
               slug
               featured_media {
                 localFile {
@@ -36,6 +37,7 @@ const ProjectGrid = () => (
         <h2>Prosjekter</h2>
         {data.allWordpressPost.edges.map(item => (
           <ProjectCard
+            key={item.node.id}
             slug={`/${item.node.slug}`}
             client={item.node.acf.client}
             year={item.node.date}
