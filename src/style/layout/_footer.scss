@@ -7,134 +7,96 @@
 footer {
   width: 100vw;
   height: 100vh;
-  background: $color-black;
-  padding: $unit600 0;
-  color: white;
   display: flex;
   flex-direction: column;
+  padding: 0 $unit500 $unit500;
 
-  * {
-    color: white;
-  }
-
-  @include breakpoint(larger) {
-    padding: $unit400 !important;
+  @include breakpoint(medium) {
+    padding: 0 $unit400 $unit400;
   }
 
   @include breakpoint(small) {
-    padding: $unit300 !important;
-  }
-
-  .Wrapper {
-    height: fit-content;
-    width: 100%;
-
-    &:nth-of-type(2) {
-      margin: 0 auto !important;
-    }
+    padding: 0 $unit300 $unit300;
   }
 
   .contact,
   .bottom-row {
-    height: fit-content;
     width: 100%;
-    display: inline-flex;
   }
 
   .contact {
+    display: inline-flex;
+    height: 100vh;
     flex-direction: column;
-    align-self: flex-end;
-    justify-self: flex-end;
+    justify-content: center;
 
     h1 {
-      color: $color-pale-yellow;
-      margin-bottom: $unit200;
+      margin: $unit200 0;
     }
 
     a {
-      font-weight: inherit;
-
-      &:hover {
-        color: white;
-        opacity: 0.8;
+      .call-me {
+        display: inline-block;
+        margin-left: 12px;
+        transform-origin: 5% 65%;
       }
-    }
 
-    @include breakpoint(larger) {
-      padding: 0 $unit600;
-    }
-
-    @include breakpoint(medium) {
-      padding: 0;
-    }
-
-    @include breakpoint(small) {
-      margin-top: $unit700;
+      &:hover .call-me {
+        transform: rotate(-10deg);
+      }
     }
   }
 
+  // Bottom row -> Social links, credits and copyright
   .bottom-row {
-    flex-direction: row-reverse;
-    align-self: flex-end;
-    vertical-align: bottom;
-    text-transform: uppercase;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
-    * {
-      font-size: 16px !important;
-    }
-
-    h6 {
-      color: $color-pale-yellow;
-      opacity: 1;
-      margin-bottom: $unit300;
-    }
-
-    a {
-      color: rgba(#fff, 0.8);
-      &:hover {
-        color: #fff;
-      }
-    }
-
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
+      justify-content: unset;
       flex-direction: column;
     }
 
     .social-links {
-      height: auto;
-      display: inline-flex;
+      display: flex;
+      flex-direction: row;
 
       a {
-        text-decoration: none;
+        width: fit-content;
+        @extend p;
 
         & + a {
           margin-left: $unit300;
         }
-
-        .icon {
-          fill: rgba(#fff, 0.8);
-        }
       }
 
-      @include breakpoint(small) {
+      @include breakpoint(medium) {
+        height: fit-content;
         flex-direction: column;
-        margin-bottom: $unit400;
+        justify-self: flex-start;
+        position: relative;
+        bottom: 80px;
 
-        a {
-          height: $unit300;
-
-          & + a {
-            margin-left: 0;
-            margin-top: $unit200;
-          }
+        a + a {
+          margin-left: 0;
+          margin-top: $unit200;
         }
       }
     }
 
     .copyright {
-      p {
-        opacity: 0.8;
+      @include breakpoint(medium) {
+        order: 3;
+      }
+    }
+
+    .made-with {
+      @include breakpoint(medium) {
+        order: 2;
+        margin: $unit400 0;
       }
     }
   }

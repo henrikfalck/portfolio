@@ -18,10 +18,7 @@ const ProjectHero = (img, alt, client, clienturl, categories, title) => (
             target="_blank"
             href={clienturl}
           >
-            <p>
-              {client}
-              <IconExternalLink />
-            </p>
+            <p>{client}</p>
           </a>
         </div>
         <div className="categories">

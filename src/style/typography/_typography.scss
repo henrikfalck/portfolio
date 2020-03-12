@@ -4,104 +4,97 @@
 
 @import "../utilities/_breakpoints";
 
+// Arrow variables
+$arrow-left: "\2190";
+$arrow-up: "\2191";
+$arrow-right: "\2192";
+$arrow-down: "\2193";
+
 // SIZES
 html {
   font-size: 125%;
 }
 
 body {
-  font-size: 20px; // 1rem = 20px
+  font-size: 22px;
   font-family: "Calibre", "Inter", sans-serif;
+
+  .arrow {
+    font-family: "Inter arrows", sans-serif;
+  }
+
+  * {
+    color: white !important;
+  }
 }
 
 // STYLES
 
+h1,
+h1.display,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 h1 {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 3.2rem;
-  text-transform: uppercase;
+  font-size: 4.2rem;
   line-height: 1;
 
   @include breakpoint(medium) {
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
 
   &.display {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 5.6rem;
-
-    @include breakpoint(larger) {
-      font-size: 4.8rem;
-    }
+    font-size: 6rem;
 
     @include breakpoint(medium) {
-      font-size: 2.2rem;
+      font-size: 3.2rem !important;
     }
   }
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  line-height: 1;
+  font-size: 3.1rem;
 
-  @include breakpoint(small) {
-    font-size: 1.8rem;
+  @include breakpoint(medium) {
+    font-size: 2.2rem;
   }
 }
 
 h3 {
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  line-height: 1;
+  font-size: 2.3rem;
 
-  @include breakpoint(small) {
-    font-size: 1.6rem;
+  @include breakpoint(medium) {
+    font-size: 1.75rem;
   }
 }
 
 h4 {
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     font-size: 1.4rem;
   }
 }
 
 h5 {
-  font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.36rem;
 
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     font-size: 1.2rem;
   }
 }
 
-h6 {
-  font-weight: 500;
-  font-size: 1.15rem;
-  text-transform: uppercase;
+p {
+  font-size: 1rem;
+  line-height: 1.2;
 
-  a {
-    font-size: inherit;
-  }
-
-  @include breakpoint(small) {
-    font-size: 16px;
-  }
-}
-
-p,
-a {
-  font-weight: 400;
-  font-size: 1.15rem;
-
-  @include breakpoint(small) {
-    font-size: 1rem;
+  @include breakpoint(medium) {
+    font-size: 0.9rem;
   }
 }

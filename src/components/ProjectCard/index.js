@@ -1,26 +1,26 @@
 import React from "react"
 import Img from "gatsby-image"
-import { AnimatedLink } from "../links"
+import { Link } from "gatsby"
 import "./ProjectCard.scss"
-const ProjectCard = ({ title, client, slug, img, categories }) => (
-  <div className="project-card">
-    <AnimatedLink to={slug}>
+const ProjectCard = ({ client, slug, img, year, categories, id }) => (
+  <div className="project-card" data-sal="fade" key={id}>
+    <Link to={slug}>
       <Img
         className="project--featured-media"
         fluid={img}
         loading="lazy"
-        alt={title}
-        placeholderStyle={{ backgroundColor: "#bebebe" }}
+        alt={client}
+        objectPosition="50% 50%"
+        placeholderStyle={{ backgroundColor: "#242424" }}
       />
       <div className="project--information">
-        <h6>
-          <span>{client}</span>
-          <span className="divider">{" — "}</span>
-          <span>{categories}</span>
-        </h6>
-        <h1>{title}</h1>
+        <h3>{client}</h3>
+        <div className="right">
+          <p>{year}</p>
+          <p>{categories}</p>
+        </div>
       </div>
-    </AnimatedLink>
+    </Link>
   </div>
 )
 

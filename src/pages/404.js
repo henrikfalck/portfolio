@@ -4,17 +4,17 @@ import Wrapper from "../components/wrapper"
 import Header from "../components/header"
 import "../style/layout/_error.scss"
 import "../components/Buttons/buttons.scss"
-import { AnimatedLink } from "../components/links"
+import { Link } from "gatsby"
 
 const ErrorPage = () => (
   <>
     <Header />
     <section className="error">
       <Wrapper width={1440} center>
-        <h6>#404 — side ikke funnet</h6>
+        <h5>#404 — side ikke funnet</h5>
         <h1 className="display">Her har det skjedd en feil.</h1>
         <p>Dette er egentlig litt pinlig, heh...</p>
-        <AnimatedLink to="/">
+        <Link to="/">
           <button
             className="button-primary"
             title="Tilbake-knapp"
@@ -22,7 +22,7 @@ const ErrorPage = () => (
           >
             Gå til forsiden
           </button>
-        </AnimatedLink>
+        </Link>
       </Wrapper>
     </section>
   </>

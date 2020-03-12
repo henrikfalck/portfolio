@@ -2,22 +2,7 @@
 @import "../utilities/units";
 
 a {
-  color: rgba($color-black, 0.7);
   font-size: inherit;
-
-  &:hover,
-  &:active {
-    color: rgba($color-black, 1);
-  }
-
-  .icon {
-    width: 0.8rem;
-    height: 0.8rem;
-    display: inline-block;
-    transform: translateY(2px);
-    transition: $fast $ease all;
-    fill: inherit;
-  }
 }
 
 .link-active {

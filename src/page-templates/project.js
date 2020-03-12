@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout-project"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import { IconExternalLink } from "../components/icons"
 import ProjectContent from "../components/ProjectContent/index"
 
 // Styles
@@ -13,10 +12,14 @@ const ProjectTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={data.wordpressPost.acf.client}
+        title={data.wordpressPost.title}
         description={data.wordpressPost.acf.work_title}
       />
       <section className="project-hero">
+        <div className="information">
+          <h3>{data.wordpressPost.title}</h3>
+          <h1>{data.wordpressPost.acf.project_title}</h1>
+        </div>
         <Img
           className="project-hero--img"
           fluid={
@@ -25,68 +28,20 @@ const ProjectTemplate = ({ data }) => {
           loading="eager"
           alt={data.wordpressPost.title}
         />
-        <div className="project-hero--information-box desktop">
-          <h1>{data.wordpressPost.acf.project_title}</h1>
-          <div className="project-hero--additional-info">
-            <div className="client">
-              <h6>Laget for</h6>
-              <a
-                className="external-link"
-                rel="noopener noreferrer"
-                target="_blank"
-                href={data.wordpressPost.acf.client_website}
-              >
-                <p>
-                  {data.wordpressPost.acf.client}
-                  <IconExternalLink />
-                </p>
-              </a>
-            </div>
-            <div className="categories">
-              <h6>Arbeidstype</h6>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: data.wordpressPost.acf.categories,
-                }}
-              ></p>
-            </div>
-          </div>
-        </div>
       </section>
-      <div className="project-hero--information-box mobile">
-        <h1>{data.wordpressPost.acf.project_title}</h1>
-        <div className="project-hero--additional-info">
-          <div className="client">
-            <h6>Laget for</h6>
-            <a
-              className="external-link"
-              rel="noopener noreferrer"
-              target="_blank"
-              href={data.wordpressPost.acf.client_website}
-            >
-              <p>
-                {data.wordpressPost.acf.client}
-                <IconExternalLink />
-              </p>
-            </a>
-          </div>
-          <div className="categories">
-            <h6>Arbeidstype</h6>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: data.wordpressPost.acf.categories,
-              }}
-            ></p>
-          </div>
-        </div>
-      </div>
       <ProjectContent text={data.wordpressPost.content}>
         {data.wordpressPost.acf.project_images.map(item => (
-          <Img
-            key={item.localFile.id}
-            fluid={item.localFile.childImageSharp.fluid}
-            loading="lazy"
-          />
+          <div className="image-container" data-sal="fade">
+            <Img
+              key={item.localFile.id}
+              fluid={item.localFile.childImageSharp.fluid}
+              loading="eager"
+            />
+            <div
+              className="caption"
+              dangerouslySetInnerHTML={{ __html: item.caption }}
+            ></div>
+          </div>
         ))}
       </ProjectContent>
     </Layout>
@@ -107,22 +62,28 @@ export const PROJECTQUERY = graphql`
         project_url
         project_title
         project_images {
-          slug
+          caption
           localFile {
+            id
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+              fluid(
+                toFormat: PNG
+                quality: 100
+                maxHeight: 2560
+                fit: CONTAIN
+              ) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
-              id
             }
           }
         }
       }
       featured_media {
         localFile {
+          id
           childImageSharp {
-            fluid(webpQuality: 100, toFormat: PNG, fit: COVER, maxWidth: 2560) {
-              ...GatsbyImageSharpFluid
+            fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import ProjectCard from "../ProjectCard/index"
-import Wrapper from "../wrapper"
 
 import "./ProjectGrid.scss"
 
@@ -15,14 +14,15 @@ const ProjectGrid = () => (
               acf {
                 categories
                 client
-                project_title
               }
+              date(formatString: "YYYY")
+              id
               slug
               featured_media {
                 localFile {
                   childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
+                    fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
+                      ...GatsbyImageSharpFluid_withWebp_noBase64
                     }
                   }
                 }
@@ -34,17 +34,17 @@ const ProjectGrid = () => (
     `}
     render={data => (
       <section className="project-grid">
-        <Wrapper width={1440}>
-          {data.allWordpressPost.edges.map(item => (
-            <ProjectCard
-              slug={`/${item.node.slug}`}
-              title={item.node.acf.project_title}
-              client={item.node.acf.client}
-              categories={item.node.acf.categories}
-              img={item.node.featured_media.localFile.childImageSharp.fluid}
-            />
-          ))}
-        </Wrapper>
+        <h2>Prosjekter</h2>
+        {data.allWordpressPost.edges.map(item => (
+          <ProjectCard
+            id={item.node.id}
+            slug={`/${item.node.slug}`}
+            client={item.node.acf.client}
+            year={item.node.date}
+            categories={item.node.acf.categories}
+            img={item.node.featured_media.localFile.childImageSharp.fluid}
+          />
+        ))}
       </section>
     )}
   />

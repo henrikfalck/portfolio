@@ -12,13 +12,11 @@
 @import "./layout/_footer";
 @import "./layout/_header";
 @import "./layout/_layout";
-@import "./layout/_navigation";
 
 // Utilities
 @import "./utilities/_animations";
 @import "./utilities/_breakpoints";
-@import "./utilities/_mixins";
-// @import "./utilities/_units";
+@import "./utilities/_units";
 
 // Other things
 @import "./_colors";
@@ -28,7 +26,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 
   // Remove all animations and transitions for users
   // who prefers reduced motion. ".keep-motion" allows
@@ -37,6 +34,9 @@
   @media (prefers-reduced-motion: reduce) {
     &:not(.keep-motion) {
       transition: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
       animation: none !important;
       -webkit-animation: none !important;
       -moz-animation: none !important;
@@ -45,108 +45,75 @@
   }
 }
 
-.contact-page,
-.about-page {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  padding: $unit700;
-  flex-direction: column;
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
 
-  @include breakpoint(small) {
-    padding: $unit300;
-  }
+// PAGES
+// About
+.about-page {
+  width: inherit;
 
   .Wrapper {
-    align-self: center;
+    max-height: 1440px;
 
-    h1 {
-      margin-bottom: $unit500;
-      color: $color-pale-yellow;
-    }
+    .content {
+      min-height: 100vh;
+      width: inherit;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-    p {
-      max-width: 768px;
+      p {
+        max-width: 75ch;
+        align-self: center;
+        font-size: 22px;
+        padding-right: $unit600;
 
-      a {
-        color: inherit;
+        @include breakpoint(small) {
+          padding-right: 0;
+        }
+      }
+
+      .portrait {
+        width: 600px;
+        align-self: flex-start;
+        margin-top: $unit800;
+
+        .gatsby-image-wrapper {
+          height: 768px;
+          margin-bottom: 24px;
+
+          img {
+            object-position: right center !important;
+          }
+        }
+
+        p {
+          font-size: 18px;
+
+          .arrow {
+            opacity: 0.4 !important;
+          }
+        }
+      }
+
+      // Mobile
+      @include breakpoint(medium) {
+        margin-top: 240px;
+        flex-direction: column;
+
+        .portrait {
+          width: calc(100vw - 48px);
+          max-width: 540px;
+          margin-top: 48px;
+
+          .gatsby-image-wrapper {
+            height: 480px;
+          }
+        }
       }
     }
   }
 }
-
-.contact-page {
-  background: $color-black;
-
-  p {
-    color: white;
-  }
-}
-
-.about-page {
-  background: $color-pale-yellow;
-  padding-bottom: 0;
-
-  .Wrapper {
-    align-self: flex-start !important;
-    padding-top: $unit900;
-    margin: auto 0 auto $unit300 !important;
-
-    h1 {
-      color: $color-black;
-    }
-  }
-
-  .about--content {
-    display: flex;
-    flex-direction: row;
-
-    p {
-      max-width: 768px;
-    }
-
-    @include breakpoint(small) {
-      flex-direction: column;
-
-      p + .gatsby-image-wrapper {
-        margin-left: 0;
-        margin-top: $unit400;
-      }
-    }
-  }
-
-  .gatsby-image-wrapper {
-    position: absolute !important;
-    top: 88px;
-    right: 0;
-    width: 500px;
-  }
-}
-
-// ===
-// UNITS
-// ===
-
-// SIZES
-$unit100: 8px;
-$unit200: $unit100 * 2; // 16px
-$unit300: $unit100 * 3; // 24px
-$unit400: $unit100 * 4; // 32px
-$unit500: $unit100 * 5; // 40px
-$unit600: $unit100 * 8; // 64px
-$unit700: $unit100 * 10; // 80px
-$unit800: $unit100 * 16; // 128px
-$unit900: $unit100 * 20; // 160px
-
-// SPEEDS
-$instant: 0s;
-$fast: 0.3s;
-$normal: 0.6s;
-$slow: 1.2s;
-
-// EASING
-$ease: cubic-bezier(0.29, 0, 0.28, 1);
-$ease-in: cubic-bezier(0.41, 0.03, 1, 1);
-$ease-out: cubic-bezier(0, 0.08, 0.47, 1);
-$ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
-$bounce-out: cubic-bezier(0.12, 0, 0.34, 1.22);

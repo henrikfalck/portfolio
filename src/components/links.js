@@ -1,7 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { IconExternalLink } from "./icons"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 // <ExternalLink to=""></ExternalLink>
 export const ExternalLink = ({ to, children, aria }) => (
@@ -10,10 +8,10 @@ export const ExternalLink = ({ to, children, aria }) => (
     className="external-link"
     rel="noopener noreferrer"
     target="_blank"
-    title={aria}
+    title={children}
     aria-label={aria}
   >
-    {children} <IconExternalLink />
+    {children}
   </a>
 )
 
@@ -22,19 +20,4 @@ export const InternalLink = ({ to, children, aria }) => (
   <Link className="internal-link" to={to} title={aria} aria-label={aria}>
     {children}
   </Link>
-)
-
-// <AnimatedLink to=""></AnimatedLink>
-export const AnimatedLink = ({ to, children, aria }) => (
-  <AniLink
-    to={to}
-    title={aria}
-    aria-label={aria}
-    cover
-    direction="left"
-    duration={1.5}
-    bg="#080a09"
-  >
-    {children}
-  </AniLink>
 )
