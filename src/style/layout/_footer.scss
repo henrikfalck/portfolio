@@ -57,6 +57,7 @@ footer {
     justify-content: space-between;
 
     @include breakpoint(medium) {
+      justify-content: unset;
       flex-direction: column;
     }
 
@@ -74,7 +75,9 @@ footer {
       }
 
       @include breakpoint(medium) {
+        height: fit-content;
         flex-direction: column;
+        justify-self: flex-start;
 
         a + a {
           margin-left: 0;
