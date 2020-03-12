@@ -2,7 +2,7 @@
 @import "../utilities/units";
 
 a {
-  @extend p;
+  font-size: inherit;
 }
 
 .link-active {
