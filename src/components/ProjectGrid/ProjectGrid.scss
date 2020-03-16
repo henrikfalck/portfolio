@@ -5,6 +5,10 @@
   height: auto;
   display: block;
 
+  h2 {
+    margin-bottom: $unit600;
+  }
+
   .project-card + .project-card {
     margin-top: $unit800;
   }
