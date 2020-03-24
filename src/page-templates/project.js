@@ -58,8 +58,6 @@ export const PROJECTQUERY = graphql`
       acf {
         categories
         client
-        client_website
-        project_url
         project_title
         project_images {
           caption
