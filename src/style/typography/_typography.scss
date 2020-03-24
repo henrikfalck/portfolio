@@ -4,6 +4,12 @@
 
 @import "../utilities/_breakpoints";
 
+// Arrow variables
+$arrow-left: "\2190";
+$arrow-up: "\2191";
+$arrow-right: "\2192";
+$arrow-down: "\2193";
+
 // SIZES
 html {
   font-size: 125%;
@@ -90,25 +96,5 @@ p {
 
   @include breakpoint(medium) {
     font-size: 0.9rem;
-
-    a {
-      font-size: inherit !important;
-    }
-  }
-
-  a {
-    font-size: inherit !important;
-  }
-}
-
-a {
-  font-size: inherit !important;
-
-  @include breakpoint(medium) {
-    font-size: inherit !important;
-  }
-
-  &:hover {
-    color: inherit !important;
   }
 }

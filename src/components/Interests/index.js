@@ -1,21 +1,22 @@
 import React from "react"
 import "./interests.scss"
 export const Music = () => (
-  <section id="music" data-sal="fade">
-    <h1>
-      Spillelistene mine inneholder mye fra Bring Me The Horizon, Dayseeker,
-      Dunderbeist, Fit For A King, Ice Nine Kills, In Flames, Kvelertak, Memphis
-      May Fire, Motionless In White, Northlane, Polaris, Slipknot, The Dogs,
-      Void Of Vision, Wage War, Watch Out Stampede og Written by Wolves.
-      <p>Det er mye metalcore her altså. Interessant.</p>
-    </h1>
+  <section id="music">
+    <h2 data-sal="fade">
+      Spillelistene mine inneholder mye fra Bring Me The Horizon, Bury Tomorrow,
+      Crown The Empire, Dayseeker, Disturbed, Dunderbeist, Fit For A King, Ice
+      Nine Kills, In Flames, Kvelertak, Memphis May Fire, Motionless In White,
+      Northlane, Polaris, Slipknot, The Dogs, Void Of Vision, Wage War, Watch
+      Out Stampede og Written by Wolves.
+    </h2>
   </section>
 )
 export const Bucketlist = () => (
-  <section id="bucketlist" data-sal="fade">
-    <h1>
+  <section id="bucketlist">
+    <h2 data-sal="fade">
       Bucketlisten min består av å{" "}
       <span className="item">starte eget digitalbyrå</span>,{" "}
+      <span className="item">bungee jumping</span>,{" "}
       <span className="item">få meg hund</span>,{" "}
       <span className="item">lære meg Python</span>,{" "}
       <span className="item done">jobbe med andre byråer som frilanser</span>,{" "}
@@ -27,6 +28,6 @@ export const Bucketlist = () => (
       <span className="item">reise rundt i Skottland</span>,{" "}
       <span className="item">reise til Roma</span>, og{" "}
       <span className="item">se Bring Me The Horizon live</span>.
-    </h1>
+    </h2>
   </section>
 )

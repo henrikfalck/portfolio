@@ -68,3 +68,6 @@ yarn-error.log
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Keep dev environment favicon
+src/images/favicon.png

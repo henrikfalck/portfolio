@@ -19,3 +19,45 @@
   #  publish = "dist" # Folder with the static content for _redirect file
   
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/ 
+
+[[redirects]]
+  from = "/wp-admin"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-json"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-login"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/principles"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+from = "/env"
+  to = "/nicetry"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/test/wp-login"
+  to = "/nicetry"
+  status = 301
+  force = true

@@ -34,6 +34,9 @@
   @media (prefers-reduced-motion: reduce) {
     &:not(.keep-motion) {
       transition: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
       animation: none !important;
       -webkit-animation: none !important;
       -moz-animation: none !important;
@@ -44,18 +47,7 @@
 
 body {
   background-color: black;
-
-  @include breakpoint(small) {
-    $padding: 24px;
-  }
-
-  @include breakpoint(medium) {
-    $padding: 32px;
-  }
-
-  @include breakpoint(large) {
-    $padding: 48px;
-  }
+  overflow-x: hidden;
 }
 
 // PAGES
@@ -116,6 +108,7 @@ body {
           width: calc(100vw - 48px);
           max-width: 540px;
           margin-top: 48px;
+          margin-bottom: $unit400;
 
           .gatsby-image-wrapper {
             height: 480px;
@@ -126,6 +119,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 // NiceTry
 #hacks {
   width: inherit;
@@ -151,6 +145,32 @@ body {
 
       @include breakpoint(small) {
         font-size: 12rem;
+=======
+#hacks {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding: $unit500;
+
+  @include breakpoint(medium) {
+    padding: $unit400;
+  }
+
+  @include breakpoint(small) {
+    padding: $unit300;
+  }
+
+  .Wrapper {
+    width: inherit;
+
+    h1.display {
+      font-size: 18rem !important;
+      line-height: 0.7;
+
+      @include breakpoint(small) {
+        font-size: 10rem !important;
+>>>>>>> aa7555454d146c65111cbbf11d19ec5321627da8
       }
     }
   }

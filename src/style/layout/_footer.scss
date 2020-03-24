@@ -3,13 +3,10 @@
 // ===
 
 @import "../utilities/_units";
-// @import "../utilities/_animations";
 
 footer {
   width: 100vw;
   height: 100vh;
-  background: $color-black;
-  color: $color-white;
   display: flex;
   flex-direction: column;
   padding: 0 $unit500 $unit500;
@@ -22,17 +19,13 @@ footer {
     padding: 0 $unit300 $unit300;
   }
 
-  * {
-    color: $color-white;
-  }
-
   .contact,
   .bottom-row {
     width: 100%;
-    display: inline-flex;
   }
 
   .contact {
+    display: inline-flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +38,6 @@ footer {
       .call-me {
         display: inline-block;
         margin-left: 12px;
-        transition: 0.1s ease-in-out all;
         transform-origin: 5% 65%;
       }
 
@@ -55,48 +47,56 @@ footer {
     }
   }
 
+  // Bottom row -> Social links, credits and copyright
   .bottom-row {
+    height: auto;
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    @include breakpoint(medium) {
+      justify-content: unset;
+      flex-direction: column;
+    }
+
     .social-links {
+      display: flex;
+      flex-direction: row;
+
       a {
-        font-size: 1rem !important;
+        width: fit-content;
+        @extend p;
 
         & + a {
-          margin-left: $unit400;
+          margin-left: $unit300;
         }
+      }
 
-        @include breakpoint(medium) {
-          font-size: 0.9rem !important;
+      @include breakpoint(medium) {
+        height: fit-content;
+        flex-direction: column;
+        justify-self: flex-start;
+        position: relative;
+        bottom: 80px;
 
-          & + a {
-            margin-left: $unit300;
-          }
+        a + a {
+          margin-left: 0;
+          margin-top: $unit200;
         }
       }
     }
 
-    // Mobile
-    @include breakpoint(medium) {
-      flex-direction: column;
-
-      .copyright {
+    .copyright {
+      @include breakpoint(medium) {
         order: 3;
       }
+    }
 
-      .made-with {
-        margin: $unit300 0;
-      }
-
-      .social-links {
-        display: flex;
-        flex-direction: column;
-
-        a + a {
-          margin-left: 0;
-          margin-top: $unit300;
-        }
+    .made-with {
+      @include breakpoint(medium) {
+        order: 2;
+        margin: $unit400 0;
       }
     }
   }

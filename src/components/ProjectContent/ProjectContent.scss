@@ -30,20 +30,45 @@
   .project-content--images {
     width: inherit;
 
-    .gatsby-image-wrapper {
+    .image-container {
       //max-width: 80vw;
       margin: 0 auto;
       height: auto;
       width: auto;
 
-      & + .gatsby-image-wrapper {
-        margin-top: $unit600 !important;
+      & + .image-container {
+        margin-top: $unit500 !important;
+
+        @include breakpoint(medium) {
+          margin-top: $unit400;
+        }
+
+        @include breakpoint(small) {
+          margin-top: $unit300;
+        }
       }
 
-      img,
-      picture {
-        height: 100%;
-        width: 100%;
+      .gatsby-image-wrapper {
+        max-height: calc(100vh - (48px * 2));
+
+        @include breakpoint(medium) {
+          max-height: calc(100vh - (32px * 2));
+        }
+
+        @include breakpoint(small) {
+          max-height: calc(100vh - (24px * 2));
+        }
+
+        img,
+        picture {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .caption {
+        max-width: 75ch;
+        margin: $unit200 0 0;
       }
     }
   }

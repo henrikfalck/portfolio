@@ -38,8 +38,8 @@ header {
       margin-top: 0;
 
       a {
+        @extend p;
         color: white;
-        opacity: 1;
         text-decoration-color: transparent;
 
         &:active,

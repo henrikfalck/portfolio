@@ -8,7 +8,7 @@ const SelfPortrait = () => {
       file(relativePath: { eq: "headshot-test.jpg" }) {
         childImageSharp {
           fluid(toFormat: PNG, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
@@ -17,7 +17,7 @@ const SelfPortrait = () => {
 
   return (
     <>
-      <div className="portrait" data-sal="fade">
+      <div className="portrait">
         <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
         <p>
           <span className="arrow">↑</span> Bilde: Alo Uten Like

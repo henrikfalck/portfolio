@@ -46,14 +46,14 @@ const AboutPage = () => (
             var dette jeg ville gjøre.
             <br />
             <br />
-            Dette fulgte jeg opp med å ta svennebrevet i Mediegrafikerfaget. Det
-            var i denne tiden jeg fikk en interesse for koding, med Material
-            Design Lite og Dreamweaver (du leste riktig, Dreamweaver) som
-            startslinjen min med HTML og ekstern CSS, blandet med en liten dæsj
-            hjemmekokt CSS som ikke fungerte fordi jeg hadde glemt å importere
-            det (tok meg faktisk et par dager å finne ut den delen), klassenavn
-            og id-er på norsk og selectors som ikke eksisterte andre plasser enn
-            i hodet mitt.
+            Dette fulgte jeg opp med å ta svennebrev i Mediegrafikerfaget. Det
+            var i denne tiden interessen for webutvikling kom litt etter litt,
+            med Material Design Lite og Dreamweaver (du leste riktig,
+            Dreamweaver) som startslinjen min med HTML og ekstern CSS, blandet
+            med en liten dæsj hjemmekokt CSS som ikke fungerte fordi jeg hadde
+            glemt å importere det (tok meg faktisk et par dager å finne ut den
+            delen), klassenavn og id-er på norsk og selectors som ikke
+            eksisterte andre plasser enn i hodet mitt.
             <br />
             <br />
             Nå har jeg heldigvis ikke de samme problemene, jobber i VS Code og

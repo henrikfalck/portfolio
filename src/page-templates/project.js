@@ -18,7 +18,7 @@ const ProjectTemplate = ({ data }) => {
       <section className="project-hero">
         <div className="information">
           <h3>{data.wordpressPost.title}</h3>
-          <h1 className="display">{data.wordpressPost.acf.project_title}</h1>
+          <h1>{data.wordpressPost.acf.project_title}</h1>
         </div>
         <Img
           className="project-hero--img"
@@ -31,12 +31,17 @@ const ProjectTemplate = ({ data }) => {
       </section>
       <ProjectContent text={data.wordpressPost.content}>
         {data.wordpressPost.acf.project_images.map(item => (
-          <Img
-            key={item.localFile.id}
-            fluid={item.localFile.childImageSharp.fluid}
-            loading="eager"
-            className="sa-animate"
-          />
+          <div className="image-container" data-sal="fade">
+            <Img
+              key={item.localFile.id}
+              fluid={item.localFile.childImageSharp.fluid}
+              loading="eager"
+            />
+            <div
+              className="caption"
+              dangerouslySetInnerHTML={{ __html: item.caption }}
+            ></div>
+          </div>
         ))}
       </ProjectContent>
     </Layout>
@@ -53,11 +58,9 @@ export const PROJECTQUERY = graphql`
       acf {
         categories
         client
-        client_website
-        project_url
         project_title
         project_images {
-          slug
+          caption
           localFile {
             id
             childImageSharp {
@@ -67,7 +70,7 @@ export const PROJECTQUERY = graphql`
                 maxHeight: 2560
                 fit: CONTAIN
               ) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
@@ -78,7 +81,7 @@ export const PROJECTQUERY = graphql`
           id
           childImageSharp {
             fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

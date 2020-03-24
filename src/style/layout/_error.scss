@@ -12,7 +12,7 @@
     justify-content: center;
 
     h1,
-    h6,
+    h5,
     p {
       color: white;
     }
@@ -20,21 +20,21 @@
     @include breakpoint(small) {
       height: 100vh;
 
-      h1 {
-        font-size: 3rem;
+      button {
+        width: calc(100vw - 48px) !important;
+        position: absolute;
+        left: $unit300;
+        bottom: $unit300;
       }
     }
 
     p {
       margin: $unit400 0;
-      font-size: 1rem !important;
-    }
+      font-size: 22px;
 
-    button {
-      max-width: calc(100vw - 48px) !important;
-      position: absolute;
-      left: $unit300;
-      bottom: $unit300;
+      @include breakpoint(small) {
+        font-size: 20px;
+      }
     }
   }
 }
