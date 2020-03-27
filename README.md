@@ -1,3 +1,3 @@
-# Porteføljen min
+# Personal portfolio
 
-**Bygget med:** Gatsby
+Built with GatsbyJS.
