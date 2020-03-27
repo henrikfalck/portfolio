@@ -14,29 +14,29 @@
     "update": "clear && echo \"Checking for updated packages...\" && echo \"\" && sleep 4 && yarn upgrade -L && sleep 2 && clear && echo \"Packages updated.\""
   },
   "dependencies": {
-    "gatsby": "^2.19.35",
-    "gatsby-cli": "^2.10.4",
-    "gatsby-image": "^2.2.43",
-    "gatsby-plugin-google-analytics": "^2.1.37",
-    "gatsby-plugin-manifest": "^2.2.45",
-    "gatsby-plugin-react-helmet": "^3.1.23",
-    "gatsby-plugin-sass": "^2.1.30",
+    "gatsby": "^2.20.7",
+    "gatsby-cli": "^2.11.2",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-google-analytics": "^2.2.2",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-scroll-reveal": "^0.0.6",
-    "gatsby-plugin-sharp": "^2.4.9",
-    "gatsby-source-graphql": "^2.1.34",
-    "gatsby-source-wordpress": "^3.1.66",
-    "gatsby-transformer-sharp": "^2.3.18",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-source-graphql": "^2.3.0",
+    "gatsby-source-wordpress": "^3.2.2",
+    "gatsby-transformer-sharp": "^2.4.2",
     "improved-yarn-audit": "^1.1.1",
     "node-sass": "^4.13.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
     "gatsby-plugin-eslint": "^2.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.2"
   },
   "repository": {
     "type": "git",
