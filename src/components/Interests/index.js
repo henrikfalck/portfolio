@@ -4,25 +4,21 @@ export const Music = () => (
   <section id="music">
     <h2 data-sal="fade">
       Spillelistene mine inneholder mye fra Bring Me The Horizon, Bury Tomorrow,
-      Crown The Empire, Dayseeker, Disturbed, Dunderbeist, Fit For A King, Ice
-      Nine Kills, In Flames, Kvelertak, Memphis May Fire, Motionless In White,
-      Northlane, Polaris, Slipknot, The Dogs, Void Of Vision, Wage War, Watch
-      Out Stampede og Written by Wolves.
+      Dayseeker, Dunderbeist, Fit For A King, Ice Nine Kills, In Flames,
+      Kvelertak, Memphis May Fire, Motionless In White, Northlane, Polaris,
+      Slipknot, The Dogs, Void Of Vision, Wage War, Watch Out Stampede og
+      Written by Wolves.
     </h2>
   </section>
 )
 export const Bucketlist = () => (
   <section id="bucketlist">
     <h2 data-sal="fade">
-      Bucketlisten min består av å{" "}
+      Noe av det jeg vil oppnå her i livet er å{" "}
       <span className="item">starte eget digitalbyrå</span>,{" "}
-      <span className="item">bungee jumping</span>,{" "}
-      <span className="item">få meg hund</span>,{" "}
+      <span className="item">bungee jumping fra en (meget) høy bro</span>,{" "}
       <span className="item">lære meg Python</span>,{" "}
       <span className="item done">jobbe med andre byråer som frilanser</span>,{" "}
-      <span className="item done">få egne visittkort</span>,{" "}
-      <span className="item">flytte til Oslo</span>,{" "}
-      <span className="item">flytte inn med kjæresten</span>,{" "}
       <span className="item done">publisere porteføljen min</span>,{" "}
       <span className="item">starte på bachelor-studiet</span>,{" "}
       <span className="item">reise rundt i Skottland</span>,{" "}
