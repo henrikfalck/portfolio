@@ -26,7 +26,7 @@
     "gatsby-source-graphql": "^2.3.0",
     "gatsby-source-wordpress": "^3.2.2",
     "gatsby-transformer-sharp": "^2.4.2",
-    "improved-yarn-audit": "^1.1.1",
+    "improved-yarn-audit": "^1.2.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
