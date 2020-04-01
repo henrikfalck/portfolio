@@ -2,6 +2,8 @@
 // BREAKPOINTS
 // ===
 
+// @include breakpoint(…) { … }
+
 @mixin breakpoint($point) {
   @if $point == xl {
     @error "Breakpoint #{$point} doesn't exist. Choose between 'larger', 'large', 'medium' or 'small'.";
