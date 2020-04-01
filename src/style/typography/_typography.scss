@@ -3,6 +3,7 @@
 // ===
 
 @import "../utilities/_mixins";
+@import "../_colors";
 
 // Arrow variables
 $arrow-left: "\2190";
@@ -24,7 +25,7 @@ body {
   }
 
   * {
-    color: white !important;
+    color: $color-white !important;
   }
 }
 

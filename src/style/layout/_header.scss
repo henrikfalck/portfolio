@@ -25,7 +25,7 @@ header {
 
   svg {
     height: 100px;
-    fill: white;
+    fill: $color-white;
     transform: translateX(-0.5px);
   }
 
@@ -39,13 +39,13 @@ header {
 
       a {
         @extend p;
-        color: white;
+        color: $color-white;
         text-decoration-color: transparent;
 
         &:active,
         &:hover {
-          color: white;
-          text-decoration-color: white;
+          color: $color-white;
+          text-decoration-color: $color-white;
         }
       }
 
