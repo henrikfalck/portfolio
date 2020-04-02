@@ -14,10 +14,10 @@ export const Music = () => (
 export const Bucketlist = () => (
   <section id="bucketlist">
     <h2 data-sal="fade">
-      Noe av det jeg vil oppnå her i livet er å{" "}
+      Noe av det jeg vil ha gjort i livet mitt er å{" "}
       <span className="item">starte eget digitalbyrå</span>,{" "}
-      <span className="item">bungee jumping fra en (meget) høy bro</span>,{" "}
-      <span className="item">lære meg Python</span>,{" "}
+      <span className="item">hoppe i strikk</span>,{" "}
+      <span className="item">jobbe med AI i et prosjekt</span>,{" "}
       <span className="item done">jobbe med andre byråer som frilanser</span>,{" "}
       <span className="item done">publisere porteføljen min</span>,{" "}
       <span className="item">starte på bachelor-studiet</span>,{" "}
