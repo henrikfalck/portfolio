@@ -21,15 +21,8 @@
   }
 }
 
-#music {
-  p {
-    margin-top: $unit500;
-    opacity: 0.4;
-  }
-}
-
 #bucketlist {
   .item.done {
-    color: #ffffff5c !important;
+    opacity: 0.4;
   }
 }
