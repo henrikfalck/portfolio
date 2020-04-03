@@ -25,7 +25,7 @@ header {
 
   svg {
     height: 100px;
-    fill: white;
+    fill: $color-white;
     transform: translateX(-0.5px);
   }
 
@@ -39,18 +39,41 @@ header {
 
       a {
         @extend p;
-        color: white;
+        color: $color-white;
         text-decoration-color: transparent;
 
         &:active,
         &:hover {
-          color: white;
-          text-decoration-color: white;
+          color: $color-white;
+          text-decoration-color: $color-white;
         }
       }
 
       li + li {
         margin-left: $unit300;
+
+        @include breakpoint(small) {
+          margin-left: $unit200;
+        }
+      }
+    }
+  }
+
+  // Light mode
+  @include color-scheme(light) {
+    mix-blend-mode: color-dodge;
+
+    svg {
+      fill: $color-black;
+    }
+
+    nav ul a {
+      color: $color-black;
+
+      &:active,
+      &:hover {
+        color: $color-black;
+        text-decoration-color: $color-black;
       }
     }
   }
