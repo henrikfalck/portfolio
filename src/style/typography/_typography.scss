@@ -2,7 +2,8 @@
 // TYPOGRAPHY
 // ===
 
-@import "../utilities/_breakpoints";
+@import "../utilities/_mixins";
+@import "../_colors";
 
 // Arrow variables
 $arrow-left: "\2190";
@@ -21,10 +22,6 @@ body {
 
   .arrow {
     font-family: "Inter arrows", sans-serif;
-  }
-
-  * {
-    color: white !important;
   }
 }
 
@@ -46,14 +43,14 @@ h1 {
   line-height: 1;
 
   @include breakpoint(medium) {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
 
   &.display {
     font-size: 6rem;
 
     @include breakpoint(medium) {
-      font-size: 3.2rem !important;
+      font-size: 3rem !important;
     }
   }
 }
