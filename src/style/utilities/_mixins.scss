@@ -28,3 +28,20 @@
     }
   }
 }
+
+// ===
+// DARK-MODE
+// ===
+
+// @include color-scheme(light or dark) { … }
+@mixin color-scheme($color) {
+  @if $color == light {
+    @media screen and (prefers-color-scheme: light) {
+      @content;
+    }
+  } @else if $color == dark {
+    @media screen and (prefers-color-scheme: dark) {
+      @content;
+    }
+  }
+}

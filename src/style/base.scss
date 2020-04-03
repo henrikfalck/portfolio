@@ -46,8 +46,20 @@
 }
 
 body {
-  background-color: $color-black;
   overflow-x: hidden;
+  background-color: $color-black;
+
+  * {
+    color: $color-white;
+  }
+
+  @include color-scheme(light) {
+    background-color: $color-white !important;
+
+    * {
+      color: $color-black !important;
+    }
+  }
 }
 
 // PAGES

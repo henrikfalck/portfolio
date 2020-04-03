@@ -51,6 +51,29 @@ header {
 
       li + li {
         margin-left: $unit300;
+
+        @include breakpoint(small) {
+          margin-left: $unit200;
+        }
+      }
+    }
+  }
+
+  // Light mode
+  @include color-scheme(light) {
+    mix-blend-mode: color-dodge;
+
+    svg {
+      fill: $color-black;
+    }
+
+    nav ul a {
+      color: $color-black;
+
+      &:active,
+      &:hover {
+        color: $color-black;
+        text-decoration-color: $color-black;
       }
     }
   }
