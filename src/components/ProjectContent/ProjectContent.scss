@@ -5,23 +5,21 @@
   display: block;
 
   .project-content--text {
-    max-width: 75ch;
+    min-height: 100vh;
     padding: $unit900 0;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     p {
-      text-align: center;
-      font-size: 22px !important;
+      max-width: 75ch;
+      @extend h4;
 
       & + p {
-        margin-top: 22px;
-      }
+        margin-top: 1.8rem;
 
-      @include breakpoint(medium) {
-        font-size: 20px;
-
-        & + p {
-          margin-top: 20px;
+        @include breakpoint(small) {
+          margin-top: 1.4rem;
         }
       }
     }
@@ -31,7 +29,6 @@
     width: inherit;
 
     .image-container {
-      //max-width: 80vw;
       margin: 0 auto;
       height: auto;
       width: auto;
