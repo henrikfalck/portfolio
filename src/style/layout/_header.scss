@@ -61,19 +61,19 @@ header {
 
   // Light mode
   @include color-scheme(light) {
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: normal !important;
 
     svg {
-      fill: $color-black;
+      fill: $color-black !important;
     }
 
     nav ul a {
-      color: $color-black;
+      color: $color-black !important;
 
       &:active,
       &:hover {
-        color: $color-black;
-        text-decoration-color: $color-black;
+        color: $color-black !important;
+        text-decoration-color: $color-black !important;
       }
     }
   }
