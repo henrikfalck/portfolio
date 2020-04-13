@@ -1,8 +1,19 @@
 @import "../colors";
 @import "../utilities/units";
 
-a {
-  font-size: inherit;
+* a {
+  @extend p;
+  text-decoration-color: transparent;
+  font-size: inherit; // If extended on a different tag, inherit size
+
+  &:active,
+  &:hover {
+    text-decoration-color: $color-white;
+
+    @include color-scheme(light) {
+      text-decoration-color: $color-black;
+    }
+  }
 }
 
 .link-active {
