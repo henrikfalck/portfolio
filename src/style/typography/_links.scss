@@ -1,7 +1,7 @@
 @import "../colors";
 @import "../utilities/units";
 
-* a {
+a {
   @extend p;
   text-decoration-color: transparent;
   font-size: inherit; // If extended on a different tag, inherit size
