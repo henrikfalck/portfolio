@@ -9,6 +9,7 @@
 
   @include breakpoint(larger) {
     max-width: 2560px;
+    margin: 0 auto;
   }
 
   @include breakpoint(medium) {
