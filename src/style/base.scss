@@ -83,6 +83,10 @@ body {
         font-size: 22px;
         padding-right: $unit600;
 
+        a {
+          padding: 0;
+        }
+
         @include breakpoint(small) {
           padding-right: 0;
         }
