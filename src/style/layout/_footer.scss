@@ -65,7 +65,6 @@ footer {
       flex-direction: row;
 
       a {
-        width: fit-content;
         @extend p;
 
         & + a {
