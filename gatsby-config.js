@@ -71,11 +71,10 @@ module.exports = {
           // `**/*/*/menu-locations` // <== Get menu locations
         ],
         excludedRoutes: [],
-        {/* prettier-ignore-start */}
+        // prettier-ignore
         normalizer: function({ entities }) {
           return entities
-        },
-        {/* prettier-ignore-end */}
+        }
       },
     },
     // ==========================================
