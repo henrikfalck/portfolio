@@ -46,11 +46,19 @@ h1 {
     font-size: 2.6rem;
   }
 
+  @include breakpoint(larger) {
+    font-size: 4.4rem;
+  }
+
   &.display {
     font-size: 6rem;
 
     @include breakpoint(medium) {
       font-size: 3rem !important;
+    }
+
+    @include breakpoint(larger) {
+      font-size: 8rem;
     }
   }
 }
@@ -61,6 +69,10 @@ h2 {
   @include breakpoint(medium) {
     font-size: 2.2rem;
   }
+
+  @include breakpoint(larger) {
+    font-size: 3.3rem;
+  }
 }
 
 h3 {
@@ -68,6 +80,10 @@ h3 {
 
   @include breakpoint(medium) {
     font-size: 1.75rem;
+  }
+
+  @include breakpoint(larger) {
+    font-size: 2.5rem;
   }
 }
 
@@ -77,6 +93,10 @@ h4 {
   @include breakpoint(medium) {
     font-size: 1.4rem;
   }
+
+  @include breakpoint(larger) {
+    font-size: 2.2rem;
+  }
 }
 
 h5 {
@@ -84,6 +104,10 @@ h5 {
 
   @include breakpoint(medium) {
     font-size: 1.2rem;
+  }
+
+  @include breakpoint(larger) {
+    font-size: 1.5rem;
   }
 }
 
