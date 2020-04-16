@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        threshold: 0.15, // Percentage of an element's area that needs to be visible to launch animation
+        threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
         once: true, // Defines if animation needs to be launched once
         disable: false, // Flag for disabling animations
 
@@ -48,14 +48,14 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `wp.henrikfalck.no`,
+        baseUrl: `innlogging.henrikfalck.no`,
         protocol: `http`,
         hostingWPCOM: false,
         useACF: true,
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: `http://wp.henrikfalck.no`,
+          sourceUrl: `http://innlogging.henrikfalck.no`,
           replacementUrl: `http://localhost:8000`,
         },
         concurrentRequests: 10,
@@ -71,9 +71,10 @@ module.exports = {
           // `**/*/*/menu-locations` // <== Get menu locations
         ],
         excludedRoutes: [],
+        // prettier-ignore
         normalizer: function({ entities }) {
           return entities
-        },
+        }
       },
     },
     // ==========================================
