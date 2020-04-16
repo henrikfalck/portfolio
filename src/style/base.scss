@@ -159,7 +159,7 @@ body {
       line-height: 0.8;
 
       @include breakpoint(medium) {
-        font-size: 12rem;
+        font-size: 8rem !important;
       }
     }
   }
