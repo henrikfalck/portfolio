@@ -3,7 +3,7 @@ import Wrapper from "../wrapper"
 import "./FrontpageHero.scss"
 const FrontpageHero = () => (
   <section className="hero">
-    <Wrapper width={1920}>
+    <Wrapper>
       <h1
         className="display"
         aria-label="Mediegrafiker med fokus på UI-design og front end-utvikling"
