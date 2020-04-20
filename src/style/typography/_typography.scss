@@ -69,10 +69,6 @@ h2 {
   @include breakpoint(medium) {
     font-size: 2.2rem;
   }
-
-  @include breakpoint(larger) {
-    font-size: 3.3rem;
-  }
 }
 
 h3 {
@@ -80,10 +76,6 @@ h3 {
 
   @include breakpoint(medium) {
     font-size: 1.75rem;
-  }
-
-  @include breakpoint(larger) {
-    font-size: 2.5rem;
   }
 }
 
@@ -93,10 +85,6 @@ h4 {
   @include breakpoint(medium) {
     font-size: 1.4rem;
   }
-
-  @include breakpoint(larger) {
-    font-size: 2.2rem;
-  }
 }
 
 h5 {
@@ -104,10 +92,6 @@ h5 {
 
   @include breakpoint(medium) {
     font-size: 1.2rem;
-  }
-
-  @include breakpoint(larger) {
-    font-size: 1.5rem;
   }
 }
 
