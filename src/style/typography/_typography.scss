@@ -46,19 +46,11 @@ h1 {
     font-size: 2.6rem;
   }
 
-  @include breakpoint(larger) {
-    font-size: 4.4rem;
-  }
-
   &.display {
     font-size: 6rem;
 
     @include breakpoint(medium) {
       font-size: 3rem !important;
-    }
-
-    @include breakpoint(larger) {
-      font-size: 8rem;
     }
   }
 }
