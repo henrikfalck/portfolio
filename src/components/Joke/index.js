@@ -15,7 +15,7 @@ function Joke() {
 
   const randomJoke = jokeArray[Math.floor(Math.random() * jokeArray.length)]
 
-  return <h1>{randomJoke}</h1>
+  return <h1 data-sal="fade">{randomJoke}</h1>
 }
 
 export default Joke
