@@ -135,6 +135,17 @@ body {
   }
 }
 
+// Jokes
+.joke-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    max-width: 90vw;
+  }
+}
+
 // NiceTry
 #hacks {
   width: inherit;
