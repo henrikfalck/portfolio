@@ -7,9 +7,7 @@ const JokePage = ({ joke }) => (
   <Layout>
     <SEO title="Vits" description="En tilfeldig designer-vits" />
     <section className="joke-container">
-      <h1>
-        <Joke />
-      </h1>
+      <Joke />
     </section>
   </Layout>
 )
