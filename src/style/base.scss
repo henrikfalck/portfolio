@@ -138,8 +138,18 @@ body {
 // Jokes
 .joke-container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
+  padding: 0 $unit500;
+
+  @include breakpoint(medium) {
+    padding: 0 $unit400;
+  }
+
+  @include breakpoint(small) {
+    padding: 0 $unit300;
+  }
 
   h1 {
     max-width: 90vw;
