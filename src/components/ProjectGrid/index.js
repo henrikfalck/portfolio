@@ -32,10 +32,10 @@ const ProjectGrid = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <section className="project-grid">
         <h2>Prosjekter</h2>
-        {data.allWordpressPost.edges.map(item => (
+        {data.allWordpressPost.edges.map((item) => (
           <ProjectCard
             id={item.node.id}
             slug={`/${item.node.slug}`}
