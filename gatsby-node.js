@@ -29,13 +29,13 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       throw result.errors
     }
 
     const Project = result.data.allWordpressPost.edges
-    Project.forEach(post => {
+    Project.forEach((post) => {
       createPage({
         path: `/${post.node.slug}`,
         component: ProjectTemplate,
