@@ -74,3 +74,5 @@ yarn-error.log
 
 # Keep dev environment favicon
 # src/images/favicon.png
+# Local Netlify folder
+.netlify
