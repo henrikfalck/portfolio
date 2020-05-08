@@ -71,7 +71,7 @@ module.exports = {
           // `**/*/*/menus`, // <== Get menus
           // `**/*/*/menu-locations` // <== Get menu locations
         ],
-        excludedRoutes: [],
+        excludedRoutes: [`/test`],
         // prettier-ignore
         normalizer: function({ entities }) {
           return entities
