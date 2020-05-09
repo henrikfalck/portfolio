@@ -64,6 +64,7 @@ module.exports = {
           // `**/categories`,
           `**/posts`,
           `**/pages`,
+          `**/laboratoriet`,
           `**/media`,
           `**/tags`,
           `**/taxonomies`,
