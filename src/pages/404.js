@@ -5,9 +5,11 @@ import Header from "../components/header"
 import "../style/layout/_error.scss"
 import "../components/Buttons/buttons.scss"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const ErrorPage = () => (
   <>
+    <SEO title="404" description="Dette er egentlig litt pinlig." />
     <Header />
     <section className="error">
       <Wrapper width={1440} center>
