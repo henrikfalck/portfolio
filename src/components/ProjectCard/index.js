@@ -5,6 +5,10 @@ import "./ProjectCard.scss"
 const ProjectCard = ({ client, slug, img, year, categories, id }) => (
   <div className="project-card" data-sal="fade" key={id}>
     <Link to={slug}>
+      <div className="new-project-indicator">
+        <div className="new-project-indicator__border"></div>
+        <span>Nytt prosjekt!</span>
+      </div>
       <Img
         className="project--featured-media"
         fluid={img}
