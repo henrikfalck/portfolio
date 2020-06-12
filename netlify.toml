@@ -56,12 +56,6 @@ from = "/env"
   status = 301
   force = true
 
-[[redirects]]
-  from = "/test/wp-login"
-  to = "/nicetry"
-  status = 301
-  force = true
-
 [[plugins]]
 package = "netlify-plugin-gatsby-cache"
 
