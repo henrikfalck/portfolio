@@ -9,10 +9,6 @@ a {
   &:active,
   &:hover {
     text-decoration-color: $color-white;
-
-    @include color-scheme(light) {
-      text-decoration-color: $color-black;
-    }
   }
 }
 
