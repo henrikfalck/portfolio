@@ -3,13 +3,9 @@ import React from "react"
 // Styles
 import "./ProjectContent.scss"
 
-const ProjectContent = ({ children, text }) => (
+const ProjectContent = ({ children, content }) => (
   <section className="project-content">
-    <div
-      className="project-content--text sa-animate"
-      dangerouslySetInnerHTML={{ __html: text }}
-    ></div>
-    <div className="project-content--images">{children}</div>
+    <div dangerouslySetInnerHTML={{ __html: content }}></div>
   </section>
 )
 
