@@ -1,0 +1,36 @@
+.codeblock {
+  width: inherit;
+  max-width: 560px;
+  display: block;
+  background-color: #3d424d66;
+  padding: 20px 24px;
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  //border: 2px solid #ffffff10;
+  font-family: "Fira Code", monospace;
+  line-height: 1.5;
+  color: #ffffff90;
+
+  @supports (font-variation-settings: normal) {
+    font-family: "Fira Code VF", monospace;
+  }
+
+  ::selection {
+    background-color: white;
+    color: black;
+  }
+
+  ::-moz-selection {
+    background-color: white;
+    color: black;
+  }
+
+  .codeblock--language {
+    display: block;
+    padding-bottom: 16px;
+    border-bottom: 2px dashed #ffffff20;
+    color: #fdb851;
+    margin-bottom: 16px;
+  }
+}
