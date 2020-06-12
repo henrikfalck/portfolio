@@ -17,6 +17,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const ProjectTemplate = path.resolve("./src/page-templates/project.js")
   // const PageTemplate = path.resolve("./src/templates/blog-post.js")
+  // const ExperimentTemplate = path.resolve("./src/page-templates/experiment.js")
 
   return graphql(`
     {
@@ -51,8 +52,19 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/${page.node.slug}`,
         component: PageTemplate,
         context: {
-          id: page.node.wordpress_id,
+          id: page.node.id,
         },
+      })
+    }) */
+
+    /* const Experiment = result.data.Pages.edges
+    Experiment.forEach(page => {
+      createPage({
+        path: `/laboratoriet/${page.node.slug}`,
+        component: ExperimentTemplate,
+        context: {
+          id: page.node.id
+        }
       })
     }) */
   })
