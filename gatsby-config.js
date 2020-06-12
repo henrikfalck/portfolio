@@ -46,6 +46,16 @@ module.exports = {
         exitEventName: "sal:out", // Exit event name
       },
     },
+    /* // Contentful
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `6u2s7qjfrovx`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `pSsi6uQMH1ltqkIqgMj_czcH9UA_YIHfEKwGP4uv-A4`,
+      },
+    }, */
+    // Wordpress
     {
       resolve: `gatsby-source-wordpress`,
       options: {
@@ -53,7 +63,7 @@ module.exports = {
         protocol: `http`,
         hostingWPCOM: false,
         useACF: true,
-        verboseOutput: false,
+        verboseOutput: true,
         perPage: 100,
         searchAndReplaceContentUrls: {
           sourceUrl: `http://innlogging.henrikfalck.no`,
@@ -72,7 +82,7 @@ module.exports = {
           // `**/*/*/menus`, // <== Get menus
           // `**/*/*/menu-locations` // <== Get menu locations
         ],
-        excludedRoutes: [`/test`],
+        excludedRoutes: [],
         // prettier-ignore
         normalizer: function({ entities }) {
           return entities

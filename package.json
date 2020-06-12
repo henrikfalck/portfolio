@@ -22,7 +22,10 @@
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^2.6.11",
+<<<<<<< HEAD
     "gatsby-source-contentful": "^2.3.12",
+=======
+>>>>>>> 1581409d9c9af2871c09d2d9ca8fe94695e6e695
     "gatsby-source-graphql": "^2.5.4",
     "gatsby-source-wordpress": "^3.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
