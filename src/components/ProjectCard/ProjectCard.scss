@@ -40,40 +40,10 @@
     }
   }
 
-  .new-project-indicator {
-    height: 120px;
-    width: 120px;
-    padding: $unit200;
-    box-sizing: content-box;
-    display: flex;
-    transform: translateX(-28px) translateY(-32px);
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    align-items: center;
-    font-size: 1.2rem;
-    text-align: center;
-
-    .new-project-indicator__border {
-      height: inherit;
-      width: inherit;
-      border: 2px dashed $color-white;
-      border-radius: 50%;
-      position: absolute;
-      animation: NewProjectIndicator 8s linear infinite;
-      animation-play-state: running;
-    }
-
-    span {
-      margin-top: -8px;
-      color: $color-white;
-      transform: rotate(20deg);
-    }
-  }
-
   &:not(:first-of-type) {
-    .new-project-indicator {
+    .new-post {
       display: none;
+      visibility: hidden;
     }
   }
 }
