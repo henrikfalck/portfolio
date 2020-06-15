@@ -15,7 +15,7 @@ const ProjectGrid = () => (
                 categories
                 client
               }
-              date(formatString: "YYYY")
+              date(formatString: "MM.YYYY")
               id
               slug
               featured_media {
