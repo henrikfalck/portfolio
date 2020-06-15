@@ -38,7 +38,7 @@ export const Grid = () => (
   <StaticQuery
     query={graphql`
       query PROJECTGRID_QUERY {
-        allWordpressPost(limit: 6) {
+        allWordpressPost(limit: 4) {
           edges {
             node {
               acf {
@@ -63,19 +63,29 @@ export const Grid = () => (
       }
     `}
     render={(data) => (
-      <section className="project-grid">
-        <h2>Utvalgte prosjekter</h2>
-        {data.allWordpressPost.edges.map((item) => (
-          <Card
-            id={item.node.id}
-            slug={`/${item.node.slug}`}
-            client={item.node.acf.client}
-            year={item.node.date}
-            categories={item.node.acf.categories}
-            img={item.node.featured_media.localFile.childImageSharp.fluid}
-          />
-        ))}
-      </section>
+      <>
+        <section className="project-grid">
+          <h2>Utvalgte prosjekter</h2>
+          {data.allWordpressPost.edges.map((item) => (
+            <Card
+              id={item.node.id}
+              slug={`/${item.node.slug}`}
+              client={item.node.acf.client}
+              year={item.node.date}
+              categories={item.node.acf.categories}
+              img={item.node.featured_media.localFile.childImageSharp.fluid}
+            />
+          ))}
+        </section>
+        <section className="other-projects">
+          <h2>Andre prosjekter</h2>
+          <div className="grid">
+            <h3>Lorem ipsum</h3>
+            <h3>Lorem ipsum</h3>
+            <h3>Lorem ipsum</h3>
+          </div>
+        </section>
+      </>
     )}
   />
 )

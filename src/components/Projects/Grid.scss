@@ -13,3 +13,39 @@
     margin-top: $unit800;
   }
 }
+
+.other-projects {
+  margin-top: $unit900;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: $unit400;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+    h3 {
+      display: inline-flex;
+      border-bottom: 2px solid white;
+      padding: 0.5rem 0;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      &:nth-of-type(2n) {
+        margin-left: 2rem;
+      }
+
+      &:not(:nth-of-type(2n)) {
+        margin-right: 2rem;
+      }
+
+      &::after {
+        content: "\2192";
+      }
+    }
+  }
+}
