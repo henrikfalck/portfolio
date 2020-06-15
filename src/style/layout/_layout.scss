@@ -7,11 +7,6 @@
 .layout {
   padding: 0 $unit500;
 
-  @include breakpoint(larger) {
-    max-width: 1920px;
-    margin: 0 auto;
-  }
-
   @include breakpoint(medium) {
     padding: 0 $unit400;
   }
