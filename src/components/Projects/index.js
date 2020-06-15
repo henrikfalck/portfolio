@@ -37,8 +37,8 @@ export const Card = ({ client, slug, img, year, categories, id }) => {
 export const Grid = () => (
   <StaticQuery
     query={graphql`
-      query PROJECTGRID_QUERY_NEW {
-        allWordpressPost {
+      query PROJECTGRID_QUERY {
+        allWordpressPost(limit: 6) {
           edges {
             node {
               acf {
@@ -64,7 +64,7 @@ export const Grid = () => (
     `}
     render={(data) => (
       <section className="project-grid">
-        <h2>Prosjekter</h2>
+        <h2>Utvalgte prosjekter</h2>
         {data.allWordpressPost.edges.map((item) => (
           <Card
             id={item.node.id}
