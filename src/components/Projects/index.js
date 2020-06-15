@@ -1,8 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import NewPost from "../NewPost"
-import { StaticQuery, graphql } from "gatsby"
 
 import "./Card.scss"
 import "./Grid.scss"
