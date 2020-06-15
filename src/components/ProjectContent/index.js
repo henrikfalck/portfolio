@@ -4,9 +4,10 @@ import React from "react"
 import "./ProjectContent.scss"
 
 const ProjectContent = ({ children, content }) => (
-  <section className="project-content">
-    <div dangerouslySetInnerHTML={{ __html: content }}></div>
-  </section>
+  <article
+    className="project-content"
+    dangerouslySetInnerHTML={{ __html: content }}
+  ></article>
 )
 
 export default ProjectContent
