@@ -1,13 +1,13 @@
 import React from "react"
 
 // Styles
-import "./ProjectContent.scss"
+import "./Content.scss"
 
-const ProjectContent = ({ children, content }) => (
+const Content = ({ children, content }) => (
   <article
     className="project-content"
     dangerouslySetInnerHTML={{ __html: content }}
   ></article>
 )
 
-export default ProjectContent
+export default Content

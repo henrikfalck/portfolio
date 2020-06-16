@@ -1,9 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
-import NewPost from "../NewPost"
-import { StaticQuery, graphql } from "gatsby"
-
+import { StaticQuery, graphql, Link } from "gatsby"
+import NewPost from "./NewPost"
 import "./Card.scss"
 import "./Grid.scss"
 
@@ -20,7 +18,6 @@ export const Card = ({ client, slug, img, year, categories, id }) => {
           loading="lazy"
           alt={client}
           objectPosition="50% 50%"
-          placeholderStyle={{ backgroundColor: "#242424" }}
         />
         <div className="project--information">
           <h3>{client}</h3>

@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import ProjectContent from "../components/ProjectContent/index"
+import Content from "../components/ProjectPage/Content"
 
 // Styles
-import "../components/ProjectHero/ProjectHero.scss"
+import "../components/ProjectPage/Hero/ProjectHero.scss"
 
 const ProjectTemplate = ({ data }) => {
   return (
@@ -29,7 +29,7 @@ const ProjectTemplate = ({ data }) => {
           alt={data.wordpressPost.title}
         />
       </section>
-      <ProjectContent content={data.wordpressPost.content} />
+      <Content content={data.wordpressPost.content} />
     </Layout>
   )
 }
