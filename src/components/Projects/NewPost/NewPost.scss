@@ -1,3 +1,5 @@
+@import "../../../style/utilities/mixins";
+
 .new-post {
   height: 120px;
   width: 120px;
@@ -19,7 +21,7 @@
     border: 2px dashed white;
     border-radius: 50%;
     position: absolute;
-    animation: NewProjectIndicator 8s linear infinite;
+    animation: NewProjectIndicator 16s linear infinite;
     animation-play-state: running;
   }
 
@@ -27,5 +29,15 @@
     margin-top: -8px;
     color: white;
     transform: rotate(20deg);
+  }
+
+  @include breakpoint(small) {
+    transform: translateX(6px) translateY(-28px);
+    height: 80px;
+    width: 80px;
+
+    span {
+      font-size: 0.85rem;
+    }
   }
 }
