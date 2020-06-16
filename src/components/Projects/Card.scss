@@ -7,10 +7,6 @@
     color: $color-white !important;
     text-decoration: none;
 
-    &:hover {
-      color: $color-white !important;
-    }
-
     .project--featured-media {
       height: calc(100vh - (96px + 73px));
     }
@@ -20,6 +16,8 @@
       flex-direction: row;
       justify-content: space-between;
       margin-top: $unit400;
+      padding-bottom: $unit200;
+      border-bottom: 2px solid transparent;
 
       .right {
         display: flex;
@@ -36,6 +34,12 @@
           text-align: left;
           margin-top: 8px;
         }
+      }
+    }
+
+    &:hover {
+      .project--information {
+        border-color: white;
       }
     }
   }
