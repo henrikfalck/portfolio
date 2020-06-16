@@ -32,9 +32,10 @@
 
     h1,
     h3 {
-      width: fit-content;
+      width: inherit;
       animation: FadeHeroText 3s ease-out 0.6s 1 normal both;
-      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -ms-word-wrap: break-word;
     }
 
     h3 {
@@ -47,6 +48,7 @@
     position: static !important;
     z-index: 0;
     animation: FadeHeroImg 0.75s ease-out 3s 1 normal both;
+    object-position: top;
 
     img,
     picture {
@@ -77,7 +79,6 @@
 @keyframes FadeHeroImg {
   from {
     opacity: 0;
-    object-position: top;
   }
   to {
     opacity: 1;
