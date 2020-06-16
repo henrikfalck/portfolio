@@ -27,6 +27,10 @@ header {
     height: 100px;
     fill: $color-white;
     transform: translateX(-0.5px);
+
+    @include breakpoint(small) {
+      height: 80px;
+    }
   }
 
   nav {
@@ -39,6 +43,7 @@ header {
 
       a {
         @extend p;
+        font-size: 1rem;
         color: $color-white;
         text-decoration-color: transparent;
 
