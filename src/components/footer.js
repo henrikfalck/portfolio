@@ -5,15 +5,13 @@ const Footer = () => (
   <footer>
     <div className="contact">
       <h1>Vil du ta en kaffe?</h1>
-      <h5>
-        <a href="mailto:hallo@henrikfalck.no">
-          hallo@henrikfalck.no
-          <span className="call-me" role="img" aria-label="Vi sees">
-            {" "}
-            🤙
-          </span>
-        </a>
-      </h5>
+      <a href="mailto:hallo@henrikfalck.no">
+        hallo@henrikfalck.no
+        <span className="call-me" role="img" aria-label="Vi sees">
+          {" "}
+          🤙
+        </span>
+      </a>
     </div>
     <div className="bottom-row">
       <div className="copyright">
