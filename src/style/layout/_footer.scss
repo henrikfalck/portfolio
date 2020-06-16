@@ -36,6 +36,7 @@ footer {
 
     a {
       @extend h5;
+      text-decoration: underline;
 
       .call-me {
         display: inline-block;
@@ -89,18 +90,23 @@ footer {
         flex-direction: column;
         justify-self: flex-start;
         position: relative;
-        bottom: 80px;
+        bottom: 64px;
 
         a + a {
           margin-left: 0;
           margin-top: $unit200;
         }
       }
+
+      @include breakpoint(small) {
+        padding: 0;
+      }
     }
 
     .copyright {
       @include breakpoint(medium) {
         order: 3;
+        margin-bottom: $unit200;
       }
     }
 
