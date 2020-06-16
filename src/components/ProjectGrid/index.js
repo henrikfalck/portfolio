@@ -1,48 +1,21 @@
 import React from "react"
-import Img from "gatsby-image"
-import { StaticQuery, graphql, Link } from "gatsby"
-import NewPost from "./NewPost"
-import "./Card.scss"
-import "./Grid.scss"
+import { StaticQuery, graphql } from "gatsby"
+import ProjectCard from "../ProjectCard/index"
 
-export const Card = ({ client, slug, img, year, categories, id }) => {
-  const postYear = year.slice(3, 7)
+import "./ProjectGrid.scss"
 
-  return (
-    <div className="project-card" data-sal="fade" key={id}>
-      <Link to={slug}>
-        <NewPost />
-        <Img
-          className="project--featured-media"
-          fluid={img}
-          loading="lazy"
-          alt={client}
-          objectPosition="50% 50%"
-        />
-        <div className="project--information">
-          <h3>{client}</h3>
-          <div className="right">
-            <p>{postYear}</p>
-            <p>{categories}</p>
-          </div>
-        </div>
-      </Link>
-    </div>
-  )
-}
-
-export const Grid = () => (
+const ProjectGrid = () => (
   <StaticQuery
     query={graphql`
       query PROJECTGRID_QUERY {
-        allWordpressPost(limit: 6) {
+        allWordpressPost {
           edges {
             node {
               acf {
                 categories
                 client
               }
-              date(formatString: "MM.YYYY")
+              date(formatString: "YYYY")
               id
               slug
               featured_media {
@@ -61,9 +34,9 @@ export const Grid = () => (
     `}
     render={(data) => (
       <section className="project-grid">
-        <h2>Utvalgte prosjekter</h2>
+        <h2>Prosjekter</h2>
         {data.allWordpressPost.edges.map((item) => (
-          <Card
+          <ProjectCard
             id={item.node.id}
             slug={`/${item.node.slug}`}
             client={item.node.acf.client}
@@ -76,3 +49,5 @@ export const Grid = () => (
     )}
   />
 )
+
+export default ProjectGrid

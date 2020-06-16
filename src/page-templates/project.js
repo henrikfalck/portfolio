@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import Content from "../components/ProjectPage/Content"
+import ProjectContent from "../components/ProjectContent/index"
 
 // Styles
-import "../components/ProjectPage/Hero/ProjectHero.scss"
+import "../components/ProjectHero/ProjectHero.scss"
 
 const ProjectTemplate = ({ data }) => {
   return (
@@ -29,7 +29,20 @@ const ProjectTemplate = ({ data }) => {
           alt={data.wordpressPost.title}
         />
       </section>
-      <Content content={data.wordpressPost.content} />
+      <ProjectContent text={data.wordpressPost.content}>
+        {data.wordpressPost.acf.project_images.map((item) => (
+          <div className="image-container" data-sal="fade">
+            <Img
+              key={item.localFile.id}
+              fluid={item.localFile.childImageSharp.fluid}
+            />
+            <div
+              className="caption"
+              dangerouslySetInnerHTML={{ __html: item.caption }}
+            ></div>
+          </div>
+        ))}
+      </ProjectContent>
     </Layout>
   )
 }
@@ -39,7 +52,6 @@ export default ProjectTemplate
 export const PROJECTQUERY = graphql`
   query($id: Int) {
     wordpressPost(wordpress_id: { eq: $id }) {
-      wordpress_id
       title
       content
       acf {

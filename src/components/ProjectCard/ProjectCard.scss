@@ -39,11 +39,4 @@
       }
     }
   }
-
-  &:not(:first-of-type) {
-    .new-post {
-      display: none;
-      visibility: hidden;
-    }
-  }
 }

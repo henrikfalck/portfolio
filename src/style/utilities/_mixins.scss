@@ -7,11 +7,11 @@
 @mixin breakpoint($point) {
   @if $point == xl {
     @error "Breakpoint #{$point} doesn't exist. Choose between 'larger', 'large', 'medium' or 'small'.";
-    @media screen and (min-width: 1920.1px) {
+    @media screen and (min-width: 2000.1px) {
       @content;
     }
   } @else if $point == larger {
-    @media screen and (max-width: 1920px) {
+    @media screen and (max-width: 2000px) {
       @content;
     }
   } @else if $point == large {
