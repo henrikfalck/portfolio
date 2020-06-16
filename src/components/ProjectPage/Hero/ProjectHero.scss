@@ -19,15 +19,15 @@
     flex-direction: column;
 
     @include breakpoint(large) {
-      width: calc(100vw - (48px * 2)) !important;
+      width: calc(100vw - (48px * 2));
     }
 
     @include breakpoint(medium) {
-      width: calc(100vw - (32px * 2)) !important;
+      width: calc(100vw - (32px * 2));
     }
 
     @include breakpoint(small) {
-      width: calc(100vw - (24px * 2)) !important;
+      width: calc(100vw - (24px * 2));
     }
 
     h1,
