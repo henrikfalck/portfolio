@@ -32,6 +32,10 @@
     max-width: inherit;
     display: flex;
 
+    @include breakpoint(small) {
+      flex-direction: column;
+    }
+
     & + figure {
       margin-top: $unit500;
 
@@ -98,15 +102,22 @@
       display: flex;
       align-content: space-between;
 
-      @include breakpoint(small) {
-        width: 100%;
-      }
-
       &::before {
         @extend .arrow;
         content: "\2190";
         margin-right: 1rem;
         opacity: 0.7;
+      }
+
+      @include breakpoint(small) {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+
+        &::before {
+          content: "\2191";
+          margin-right: 0.5rem;
+        }
       }
     }
 
