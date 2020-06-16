@@ -35,7 +35,7 @@ export const Grid = () => (
   <StaticQuery
     query={graphql`
       query PROJECTGRID_QUERY {
-        allWordpressPost(limit: 6) {
+        allWordpressPost(limit: 6, sort: { fields: date, order: DESC }) {
           edges {
             node {
               acf {
