@@ -46,22 +46,6 @@ export const PROJECTQUERY = graphql`
         categories
         client
         project_title
-        project_images {
-          caption
-          localFile {
-            id
-            childImageSharp {
-              fluid(
-                toFormat: PNG
-                quality: 100
-                maxHeight: 2560
-                fit: CONTAIN
-              ) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-        }
       }
       featured_media {
         localFile {
