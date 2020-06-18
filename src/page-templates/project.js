@@ -45,7 +45,7 @@ export const PROJECTQUERY = graphql`
         localFile {
           id
           childImageSharp {
-            fluid(toFormat: WEBP, quality: 100, maxHeight: 2560) {
+            fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
