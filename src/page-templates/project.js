@@ -9,8 +9,8 @@ const ProjectTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={data.wordpressPost.title}
-        description={data.wordpressPost.acf.work_title}
+        title={data.wordpressPost.acf.work_title}
+        description={data.wordpressPost.content}
       />
       <Hero
         img={data.wordpressPost.featured_media.localFile.childImageSharp.fluid}
