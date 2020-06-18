@@ -48,7 +48,7 @@ export const Grid = () => (
               featured_media {
                 localFile {
                   childImageSharp {
-                    fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
+                    fluid(quality: 100, maxHeight: 2560) {
                       ...GatsbyImageSharpFluid_withWebp_noBase64
                     }
                   }

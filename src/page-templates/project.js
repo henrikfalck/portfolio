@@ -2,11 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+import Hero from "../components/ProjectPage/Hero"
 import Content from "../components/ProjectPage/Content"
-
-// Styles
-import "../components/ProjectPage/Hero/ProjectHero.scss"
 
 const ProjectTemplate = ({ data }) => {
   return (
@@ -15,21 +12,17 @@ const ProjectTemplate = ({ data }) => {
         title={data.wordpressPost.title}
         description={data.wordpressPost.acf.work_title}
       />
-      <section className="project-hero">
-        <div className="information">
-          <h3>{data.wordpressPost.title}</h3>
-          <h1>{data.wordpressPost.acf.project_title}</h1>
-        </div>
-        <Img
-          className="project-hero--img"
-          fluid={
-            data.wordpressPost.featured_media.localFile.childImageSharp.fluid
-          }
-          loading="eager"
-          alt={data.wordpressPost.title}
-        />
-      </section>
-      <Content content={data.wordpressPost.content} />
+      <Hero
+        img={data.wordpressPost.featured_media.localFile.childImageSharp.fluid}
+        alt={data.wordpressPost.title}
+      />
+      <Content
+        title={data.wordpressPost.acf.project_title}
+        content={data.wordpressPost.content}
+        client={data.wordpressPost.acf.client}
+        categories={data.wordpressPost.acf.categories}
+        date={data.wordpressPost.date}
+      />
     </Layout>
   )
 }
@@ -42,6 +35,7 @@ export const PROJECTQUERY = graphql`
       wordpress_id
       title
       content
+      date(formatString: "YYYY")
       acf {
         categories
         client
@@ -51,7 +45,7 @@ export const PROJECTQUERY = graphql`
         localFile {
           id
           childImageSharp {
-            fluid(toFormat: PNG, quality: 100, maxHeight: 2560) {
+            fluid(toFormat: WEBP, quality: 100, maxHeight: 2560) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
