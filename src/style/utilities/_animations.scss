@@ -35,15 +35,6 @@
 
 // ANIMATIONS
 
-@include keyframes(HeadingIn) {
-  from {
-    visibility: hidden;
-  }
-  to {
-    visibility: visible;
-  }
-}
-
 @include keyframes(NewProjectIndicator) {
   0% {
     transform: rotate(0);
