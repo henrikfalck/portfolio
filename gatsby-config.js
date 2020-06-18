@@ -63,11 +63,11 @@ module.exports = {
         protocol: `http`,
         hostingWPCOM: false,
         useACF: true,
-        verboseOutput: true,
+        verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
           sourceUrl: `http://innlogging.henrikfalck.no`,
-          replacementUrl: `http://localhost:8000`,
+          replacementUrl: `http://henrikfalck.no`,
         },
         concurrentRequests: 10,
         includedRoutes: [
