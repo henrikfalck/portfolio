@@ -6,7 +6,7 @@ a {
   text-decoration-color: transparent;
   font-size: inherit; // If extended on a different tag, inherit size
 
-  &:active,
+  &.active,
   &:hover {
     text-decoration-color: $color-white;
   }

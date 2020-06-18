@@ -12,10 +12,14 @@ export default class Header extends Component {
         <nav className="navigation">
           <ul>
             <li className="navigation--link">
-              <Link to="/">Prosjekter</Link>
+              <Link activeClassName="active" to="/">
+                Prosjekter
+              </Link>
             </li>
             <li className="navigation--link">
-              <Link to="/om">Om meg</Link>
+              <Link activeClassName="active" to="/om">
+                Om meg
+              </Link>
             </li>
           </ul>
         </nav>

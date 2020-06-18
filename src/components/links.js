@@ -17,7 +17,13 @@ export const ExternalLink = ({ to, children, aria }) => (
 
 // <InternalLink to=""></InternalLink>
 export const InternalLink = ({ to, children, aria }) => (
-  <Link className="internal-link" to={to} title={aria} aria-label={aria}>
+  <Link
+    activeClassName="active"
+    className="internal-link"
+    to={to}
+    title={aria}
+    aria-label={aria}
+  >
     {children}
   </Link>
 )
