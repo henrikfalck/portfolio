@@ -3,10 +3,10 @@
 .project-title {
   width: 100%;
   display: inline-block;
-  margin: $unit600 0;
+  margin: $unit600 0 $unit800;
 
   @include breakpoint(large) {
-    margin: $unit400 0 $unit500;
+    margin: $unit400 0 $unit600;
   }
 }
 
@@ -32,7 +32,7 @@
     }
 
     .project-content--information-block {
-      width: fit-content;
+      width: 100px;
       min-width: $unit700;
 
       & + .project-content--information-block {
@@ -43,6 +43,8 @@
 
   .project-content--content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     p {
       margin: 0 auto;
@@ -80,9 +82,14 @@
     figure {
       width: inherit;
       display: flex;
+      margin-left: -100px;
 
       @include breakpoint(small) {
         flex-direction: column;
+      }
+
+      @include breakpoint(large) {
+        margin-left: 0;
       }
 
       & + figure {
@@ -117,6 +124,7 @@
 
       &.size-full {
         width: 100vw;
+        transform: translateX(-48px);
 
         @include breakpoint(small) {
           width: 100%;
@@ -131,8 +139,8 @@
 
       &.square {
         img {
-          max-width: 800px;
-          max-height: 800px;
+          max-width: 640px;
+          max-height: 640px;
 
           @include breakpoint(small) {
             width: 100%;
