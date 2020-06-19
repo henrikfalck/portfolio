@@ -67,7 +67,7 @@ module.exports = {
         perPage: 100,
         searchAndReplaceContentUrls: {
           sourceUrl: `http://innlogging.henrikfalck.no`,
-          replacementUrl: `http://henrikfalck.no`,
+          replacementUrl: `http://www.henrikfalck.no`,
         },
         concurrentRequests: 10,
         includedRoutes: [
