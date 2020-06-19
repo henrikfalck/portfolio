@@ -3,10 +3,12 @@
 .project-title {
   width: 100%;
   display: inline-block;
-  margin: $unit600 0 $unit800;
+  margin: $unit600 0;
+  word-wrap: break-word;
+  hyphens: auto;
 
   @include breakpoint(large) {
-    margin: $unit400 0 $unit600;
+    margin: $unit400 0;
   }
 }
 
@@ -29,6 +31,10 @@
       width: inherit;
       margin-right: 0;
       margin-bottom: $unit500;
+    }
+
+    @include breakpoint(small) {
+      margin-bottom: $unit400;
     }
 
     .project-content--information-block {
