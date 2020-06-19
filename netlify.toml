@@ -50,9 +50,6 @@ from = "/env"
   force = true
 
 [[plugins]]
-package = "netlify-plugin-gatsby-cache"
-
-[[plugins]]
 package = "netlify-plugin-a11y"
 
   # all inputs are optional, we just show you the defaults below
@@ -65,4 +62,4 @@ package = "netlify-plugin-a11y"
   resultMode = "warn" # is "error" by default 
   
   # Developer only
-  debugMode = true # extra logging for plugin developers
+  debugMode = false # extra logging for plugin developers
