@@ -1,8 +1,11 @@
 import React from "react"
 
-const JobStatus = ({ location, position }) => (
-  <h3>
-    For tiden er jeg {position} ved {location}
+const JobStatus = ({ company, companyUrl, position }) => (
+  <h3 className="job-status">
+    For tiden er jeg {position} ved{" "}
+    <a href={`https://` + companyUrl} rel="noreferrer" target="_blank">
+      {company}
+    </a>
   </h3>
 )
 
