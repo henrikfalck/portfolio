@@ -78,3 +78,6 @@ yarn-error.log
 
 # Test pages
 sandbox.js
+
+# package-lock.json
+package-lock.json

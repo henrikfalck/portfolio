@@ -5,13 +5,11 @@ import NewPost from "./NewPost"
 import "./Card.scss"
 import "./Grid.scss"
 
-export const Card = ({ client, slug, img, year, categories, id }) => {
-  const postYear = year.slice(3, 7)
-
+export const Card = ({ client, fromNow, slug, img, year, categories, id }) => {
   return (
     <div className="project-card" data-sal="fade" key={id}>
       <Link to={slug}>
-        <NewPost />
+        {fromNow === "1 month ago" ? <NewPost /> : null}
         <Img
           className="project--featured-media"
           fluid={img}
@@ -22,7 +20,7 @@ export const Card = ({ client, slug, img, year, categories, id }) => {
         <div className="project--information">
           <h3>{client}</h3>
           <div className="right">
-            <p>{postYear}</p>
+            <p>{year}</p>
             <p>{categories}</p>
           </div>
         </div>
@@ -42,7 +40,8 @@ export const Grid = () => (
                 categories
                 client
               }
-              date(formatString: "MM.YYYY")
+              postDate: date(fromNow: true)
+              date(formatString: "YYYY")
               id
               slug
               featured_media {
@@ -68,6 +67,7 @@ export const Grid = () => (
             slug={`/${item.node.slug}`}
             client={item.node.acf.client}
             year={item.node.date}
+            fromNow={item.node.postDate}
             categories={item.node.acf.categories}
             img={item.node.featured_media.localFile.childImageSharp.fluid}
           />
