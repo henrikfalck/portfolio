@@ -1,43 +1,15 @@
 @import "../../../style/utilities/mixins";
 
-.new-post {
-  height: 120px;
-  width: 120px;
+.new-post-indicator {
+  height: 160px;
+  width: 160px;
   padding: 16px;
-  box-sizing: content-box;
-  display: flex;
-  transform: translateX(-28px) translateY(-32px);
   position: absolute;
-  right: 0;
+  right: 1rem;
+  transform: translateY(-2rem);
   z-index: 1;
-  align-items: center;
-  font-size: 1.2rem;
-  text-align: center;
   mix-blend-mode: difference;
-
-  .new-post__border {
-    height: inherit;
-    width: inherit;
-    border: 2px dashed white;
-    border-radius: 50%;
-    position: absolute;
-    animation: NewProjectIndicator 16s linear infinite;
-    animation-play-state: running;
-  }
-
-  span {
-    margin-top: -8px;
-    color: white;
-    transform: rotate(20deg);
-  }
-
-  @include breakpoint(small) {
-    transform: translateX(6px) translateY(-28px);
-    height: 80px;
-    width: 80px;
-
-    span {
-      font-size: 0.85rem;
-    }
-  }
+  fill: white;
+  animation: NewProjectIndicator 3s infinite running linear;
+  transition: transform;
 }
