@@ -36,7 +36,9 @@ footer {
 
     a {
       @extend h5;
+      width: fit-content;
       text-decoration: underline;
+      padding: $unit100;
 
       .call-me {
         display: inline-block;
