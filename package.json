@@ -15,16 +15,16 @@
   },
   "dependencies": {
     "gatsby": "^2.23.4",
-    "gatsby-image": "^2.4.7",
+    "gatsby-image": "^2.4.9",
     "gatsby-plugin-google-analytics": "^2.3.4",
-    "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-manifest": "^2.4.23",
     "gatsby-plugin-react-helmet": "^3.3.4",
-    "gatsby-plugin-sass": "^2.3.4",
+    "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
-    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-source-contentful": "^2.3.12",
     "gatsby-source-graphql": "^2.5.5",
-    "gatsby-source-wordpress": "^3.3.12",
+    "gatsby-source-wordpress": "^3.3.15",
     "gatsby-transformer-sharp": "^2.5.5",
     "netlify-plugin-a11y": "0.0.12",
     "netlify-plugin-gatsby-cache": "^0.2.2",
@@ -34,7 +34,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
+    "eslint": "^7.3.1",
     "eslint-loader": "^4.0.2",
     "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "^2.0.5"
