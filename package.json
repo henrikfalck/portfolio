@@ -23,7 +23,7 @@
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-source-contentful": "^2.3.12",
-    "gatsby-source-graphql": "^2.5.5",
+    "gatsby-source-graphql": "^2.7.3",
     "gatsby-source-wordpress": "^3.3.15",
     "gatsby-transformer-sharp": "^2.5.5",
     "netlify-plugin-a11y": "0.0.12",
