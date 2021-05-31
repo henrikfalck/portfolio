@@ -14,7 +14,7 @@
     "update": "clear && echo \"Checking for updated packages...\" && echo \"\" && sleep 4 && yarn upgrade -L && sleep 2 && clear && echo \"Packages updated.\""
   },
   "dependencies": {
-    "gatsby": "^2.23.4",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^3.4.0",
     "gatsby-plugin-google-analytics": "^2.3.4",
     "gatsby-plugin-manifest": "^2.4.23",
